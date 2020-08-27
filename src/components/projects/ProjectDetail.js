@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import '../../styles/projectDetail.css';
+import back from '../../images/back.png';
 import {Row, Col, Typography, Tag} from 'antd';
 import { getReadme } from '../../services/readmeProjects';
 import PropTypes from "prop-types";
@@ -87,7 +88,7 @@ const ProjectDetail = (props) => {
 
 ProjectDetail.propTypes = {
     allProjects: PropTypes.array,
-    Match: PropTypes.number,
+    Match: PropTypes.object,
     allImages: PropTypes.array,
     allReadmes: PropTypes.array
 };

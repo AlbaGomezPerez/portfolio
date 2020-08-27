@@ -38,8 +38,8 @@ function Projects(props) {
                 return (
                     // eslint-disable-next-line react/no-array-index-key
                     <Col className="cards-container" id={`proyect--${index}`} key={index} xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }}>
-                        <Link className="CardLink" to={"/project/" + proyect.id}>
                             <div className="card-container">
+                                <Link className="CardLink" to={"/project/" + proyect.id}>
                         <Card
                         className={`item individual-card card-${index}`}
                         data-aos={`proyect--animation${index}`}
@@ -60,10 +60,11 @@ function Projects(props) {
                             title={getReadme(proyect.name, allReadmes)}
                         />
                     </Card>
+                                </Link>
 
                             </div>
 
-                        </Link>
+
                     </Col>
                 )
             })}

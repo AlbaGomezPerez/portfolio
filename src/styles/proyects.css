@@ -9,9 +9,6 @@
     height: 400px;
 }
 
-
-
-
 .individual-card {
     border: 1px solid rgb(182, 204, 198);
     border-radius: 10%;
@@ -20,10 +17,10 @@
     margin: auto;
     margin-top: 1%;
     margin-bottom: 1%;
-    background-color: white;
-    padding-top: 2%;
+    background-color: #F2F2F2;
+    padding-top: 3%;
     box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.35);
-    z-index: 100;
+
 }
 
 .proyect-image {
@@ -33,15 +30,18 @@
     width: auto;
     max-width: 100%;
     margin: auto;
-    z-index: -100;
 }
 
 .caption {
-    background-color: #F2F2F2;
+    background-color: transparent;
     width: 100%;
     height: 75px;
     margin-top: 0;
     padding: 2%;
+}
+
+.ant-card-meta-title {
+    font-size: 20px;
 }
 
 .ant-card-body {
@@ -121,13 +121,13 @@ img{
 
 
 
-[data-aos="proyect--animation0"], [data-aos="proyect--animation2"], [data-aos="proyect--animation4"] {
+[data-aos="proyect--animation0"], [data-aos="proyect--animation2"], [data-aos="proyect--animation4"], [data-aos="proyect--animation6"] {
     left: -50%;
     opacity: 0;
     transition-property: left, opacity;
 }
 
-[data-aos="proyect--animation0"].aos-animate, [data-aos="proyect--animation2"].aos-animate, [data-aos="proyect--animation4"].aos-animate {
+[data-aos="proyect--animation0"].aos-animate, [data-aos="proyect--animation2"].aos-animate, [data-aos="proyect--animation4"].aos-animate, [data-aos="proyect--animation6"].aos-animate {
     left: 1%;
     opacity: 1;
 }
@@ -149,8 +149,6 @@ img{
 /*
 PROYECTOS
     Estilos a cada tarjeta
-    Alturas de las tarejtas. Todas iguales
-    -ines es raro, se queda en blanco, pero es el enlace correcto
 */
 
 /*

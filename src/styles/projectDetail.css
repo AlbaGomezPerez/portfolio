@@ -6,7 +6,6 @@
     animation-name: appear;
     position: relative;
     border: 1px solid rgb(153, 143, 144);
-    z-index: 10;
     box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.35);
     border-radius: 2%;
     padding: 2%;
