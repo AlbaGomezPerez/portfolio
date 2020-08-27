@@ -1,0 +1,62 @@
+.experiencie-container {
+    display: flex;
+    justify-content: center;
+}
+
+.experiencie-row {
+    display: flex;
+    justify-content: center;
+}
+
+.timeline {
+    width: 100%;
+}
+
+.ant-timeline-item-content {
+    font-size: 20px;
+}
+
+.ant-timeline-item-head {
+    border-color: #8dc5be !important;
+}
+
+.experiencie-line {
+    margin-bottom: 4%;
+}
+
+.experiencie-title {
+    font-size: 22px;
+    color: rgb(153, 143, 144);
+}
+
+
+
+.curriculum-button, .curriculum-button:focus {
+    background-color: rgb(153, 109, 117);
+    color: white;
+    border: none;
+    width: 30%;
+    font-size: 20px;
+}
+
+.curriculum-button:hover {
+    background-color: rgb(235, 192, 181);
+    color: white;
+    border: 1px solid rgb(153, 109, 117);
+}
+
+.curriculum-space {
+    display: flex;
+    justify-content: center;
+}
+
+.curriculum-link {
+    width: 200%;
+    display: flex;
+    justify-content: center;
+}
+
+.dates {
+    font-size: 16px;
+    color: rgb(153, 143, 144);
+}

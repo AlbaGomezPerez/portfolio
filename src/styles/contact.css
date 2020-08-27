@@ -1,0 +1,165 @@
+.contact-title {
+    font-size: 22px;
+    color: rgb(153, 143, 144);
+    margin-right: 8%;
+    text-align: right;
+}
+
+@media all and (max-width: 768px) {
+    .contact-title {
+        margin-right: 0;
+    }
+}
+
+.contact-description {
+    margin-left: 20%;
+    margin-right: 8%;
+    text-align: right;
+    font-size: 20px;
+    font-style:italic;
+}
+
+@media all and (max-width: 768px) {
+    .contact-description {
+        margin-right: 0;
+    }
+}
+
+
+.logo-container {
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+}
+
+.profile {
+    color: #996d75;
+    padding-top: 6%;
+}
+
+.logo {
+    display: flex;
+}
+
+@media all and (max-width: 768px) {
+    .logo {
+        display: block;
+    }
+}
+
+.twitter {
+    background-image: url("../images/twitter.png");
+    background-size: 70%;
+}
+
+.twitter:hover {
+    background-image: url("../images/twitter-original.png");
+}
+
+.github {
+    background-image: url("../images/gitHub.png");
+    background-size: 96%;
+}
+.github:hover {
+    background-image: url("../images/gitHub-original.png");
+}
+
+.linkedin {
+    background-image: url("../images/linkedin.png");
+    background-size: 70%;
+}
+
+.linkedin:hover {
+    background-image: url("../images/linkedin-original.png");
+}
+
+.email {
+    background-image: url("../images/gmail.png");
+    background-size: 180%;
+    background-position-x: 38%;
+}
+
+.email:hover {
+    background-image: url("../images/gmail-original.png");
+    background-size: 70%;
+    background-position-x: 50%;
+
+}
+
+@media all and (max-width: 768px) {
+    .email {
+        margin-right: 0 !important;
+    }
+}
+
+
+.network__section {
+    padding-left: 30px;
+
+}
+
+.contact-icons {
+    border-left: 1px solid #996d75;
+    width: 50%;
+}
+
+@media all and (max-width: 768px) {
+    .contact-icons {
+        width: 100%;
+        border-left: 0px solid #996d75;
+        border-top: 1px solid #996d75;
+    }
+}
+
+.contact__container {
+    width: 50%;
+}
+
+@media all and (max-width: 768px) {
+    .attributes__container {
+        width: 100%;
+    }
+}
+
+.contact {
+    margin: auto;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.contact-row {
+    display: flex;
+}
+
+@media all and (max-width: 768px) {
+    .contact-row {
+        flex-direction: column;
+        padding-top: 20%;
+    }
+}
+
+.icons__circle {
+    animation-duration: 4s;
+    animation-name: slidein;
+}
+
+.ant-typography.page__title {
+    color: rgb(153, 109, 117);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@keyframes slidein {
+    from {
+        transform: rotate(180deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: rotate(360deg);
+        opacity: 100%;
+    }
+}

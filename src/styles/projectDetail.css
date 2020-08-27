@@ -1,0 +1,146 @@
+.image-container {
+    height: 50%;
+    margin: 2%;
+    margin-top: 6%;
+    animation-duration: 3s;
+    animation-name: appear;
+    position: relative;
+    border: 1px solid rgb(153, 143, 144);
+    z-index: 10;
+    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.35);
+    border-radius: 2%;
+    padding: 2%;
+}
+
+
+.goal-title {
+    font-size: 22px;
+    color: rgb(153, 143, 144);
+}
+
+.projects-details {
+    border-left: 1px solid #996d75;
+    width: 40%;
+}
+
+@media all and (max-width: 1025px) {
+    .projects-details {
+        width: 100%;
+        border-left: 0px solid #996d75;
+        border-top: 1px solid #996d75;
+    }
+}
+
+.image-project-container {
+    width: 60%;
+}
+
+@media all and (max-width: 1025px) {
+    .image-project-container {
+        width: 100%;
+    }
+}
+
+.details {
+    margin: auto;
+    width: 100%;
+    height: 200%;
+    margin-top: 1%;
+}
+
+.details-image {
+    display: flex;
+}
+
+@media all and (max-width: 1025px) {
+    .details-image {
+        display: block;
+    }
+}
+
+
+.goal {
+    background-image: url("../images/goal.png");
+    background-size: 70%;
+}
+
+.tools {
+    background-image: url("../images/tools.png");
+    background-size: 80%;
+}
+
+.web {
+    background-image: url("../images/web.png");
+    background-size: 90%;
+}
+
+.profile {
+    width: 100%;
+
+}
+
+.profile-text {
+    width: 100%;
+    height: auto;
+    word-wrap: break-word;
+}
+
+.nav-proyect {
+    background-color: #bfccc9;
+}
+
+
+
+
+@media all and (max-width: 1025px) {
+    .percentage__section {
+        display: flex;
+    }
+}
+
+.material-icons {
+    color: #996d75;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #F2F2F2;
+    border-radius: 80%;
+    width: 8%;
+}
+
+.material-icons:hover {
+    background-color: #cccccc;
+}
+
+.backContainer {
+    justify-content: end;
+    justify-self: end;
+}
+
+.image-project-detail {
+    max-width: 100%;
+    height: 100%;
+    background-size: cover;
+    margin: auto;
+    display: flex;
+}
+
+.topics {
+    text-transform: capitalize;
+}
+
+
+[data-aos="image-container"] {
+    bottom: -50%;
+    opacity: 0;
+    transition-property: bottom, opacity;
+}
+
+[data-aos="image-container"].aos-animate {
+    bottom: 1%;
+    opacity: 1;
+}
+
+
+
+
