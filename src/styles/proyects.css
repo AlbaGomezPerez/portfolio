@@ -2,6 +2,7 @@
 
 .ant-card {
     margin: 2%;
+
 }
 
 .card-container {
@@ -13,6 +14,7 @@
 
 .individual-card {
     border: 1px solid rgb(182, 204, 198);
+    border-radius: 10%;
     width: 50%;
     height: 100%;
     margin: auto;
@@ -20,6 +22,8 @@
     margin-bottom: 1%;
     background-color: white;
     padding-top: 2%;
+    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.35);
+    z-index: 100;
 }
 
 .proyect-image {
@@ -29,6 +33,7 @@
     width: auto;
     max-width: 100%;
     margin: auto;
+    z-index: -100;
 }
 
 .caption {
@@ -58,12 +63,12 @@ img{
     margin-left: 45%;
 }
 
-.card-0, .card-2, .card-4 {
+.card-0, .card-2, .card-4 .card-6 {
     margin-right: 45%;
 }
 
 @media all and (max-width: 768px) {
-    .card-0, .card-2, .card-4 {
+    .card-0, .card-2, .card-4, .card-6 {
         margin: auto;
         margin-bottom: 4%;
         width: 70%;
@@ -79,7 +84,7 @@ img{
 }
 
 @media all and (max-width: 768px) {
-    .card-0, .card-2, .card-4 {
+    .card-0, .card-2, .card-4, .card-6 {
         margin: auto;
         margin-bottom: 4%;
         width: 70%;
@@ -138,11 +143,6 @@ img{
     opacity: 1;
 }
 
-.proyect-image5 {
-    width: 200%;
-    padding-top: 8%;
-    padding-bottom: 8%;
-}
 
 
 
@@ -169,12 +169,10 @@ ABOUT ME
 
 /*
 OTRAS
-    Añadir video
-    Algún tipo de entradilla. Titulo, logo con mi nombre
+    Añadir video. Algún tipo de entradilla. Titulo, logo con mi nombre
     titulos de seccion animacion desorganizada
     Una unaica pagina, sin router
     Error terminal refs
-    github subir
 */
 
 

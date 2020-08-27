@@ -20,7 +20,7 @@ export function GetProjectImage(endpoint) {
     // https://api.github.com/repos/AlbaGomezPerez/users.search.ines/contents/{+path} +
     const fixedEndpoint = endpoint.replace('{+path}', '');
 
-    return fetch(`${fixedEndpoint}src/images/screen.png`).then(response => response.json());
+    return fetch(`${fixedEndpoint}src/images/project.png`).then(response => response.json());
 }
 
 export function GetReadme(project) {
