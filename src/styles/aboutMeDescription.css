@@ -47,3 +47,19 @@
     font-style:italic;
 }
 
+
+.profile-image-container {
+    position: relative;
+}
+
+[data-aos="alba-animation"] {
+    right: -200%;
+    opacity: 0;
+    transition-property: right, opacity;
+}
+
+[data-aos="alba-animation"].aos-animate {
+    right: 1%;
+    opacity: 1;
+}
+

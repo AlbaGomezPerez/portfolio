@@ -60,3 +60,28 @@
     font-size: 16px;
     color: rgb(153, 143, 144);
 }
+
+.experience-item {
+    position: relative;
+}
+[data-aos="experience-animation"] {
+    right: -200%;
+    opacity: 0;
+    transition-property: right, opacity;
+}
+
+[data-aos="experience-animation"].aos-animate {
+    right: 1%;
+    opacity: 1;
+}
+
+[data-aos="experience-animation-left"] {
+    left: -200%;
+    opacity: 0;
+    transition-property: left, opacity;
+}
+
+[data-aos="experience-animation-left"].aos-animate {
+    left: 1%;
+    opacity: 1;
+}

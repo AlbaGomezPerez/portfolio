@@ -19,6 +19,8 @@ function Projects(props) {
         duration: 1200,
     });
 
+
+
     return (
         <React.Fragment>
 

@@ -3,12 +3,15 @@ import '../styles/main.css';
 import PropTypes from 'prop-types';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Route, Switch } from 'react-router';
+// import Wave from "react-wavify";
 import ProjectDetail from './projects/ProjectDetail';
+
 
 // import Landing from './Landing';
 import AboutMe from './aboutMe/AboutMe';
 import Proyects from './projects/Proyects';
 import Contact from './Contact';
+
 
 function Main (props) {
     const { allProjects, allImages, allReadmes } = props;

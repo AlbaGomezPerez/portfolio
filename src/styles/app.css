@@ -1,4 +1,13 @@
 .app {
-    background-color: #F2F2F2;
+    /*background-color: #F2F2F2;*/
+    background-color: white;
     font-family: 'Source Sans Pro', sans-serif;
 }
+
+.back-image {
+    width: 100vw;
+    position: relative;
+    top: 800%;
+}
+
+

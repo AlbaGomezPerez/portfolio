@@ -126,6 +126,8 @@
 
 .topics {
     text-transform: capitalize;
+    background-image: url("../images/react.png");
+    background-size: cover;
 }
 
 

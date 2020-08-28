@@ -1,6 +1,36 @@
 .nav-wrapper {
     position: fixed;
     z-index: 1;
-    background-color: rgb(230, 199, 205);
+    /*background-color: rgb(230, 199, 205);*/
+    justify-content: center;
+}
+
+.nav-info {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-tab {
+    font-size: 22px;
+}
+
+.nav-tab:hover {
+    font-size: 28px;
+    color: white;
+    background-color: rgba(0,0,0,0.1);
+}
+
+nav ul a:hover {
+    height: auto;
+    background-color: transparent;
+}
+
+[data-aos="nav-animation"] {
+    background-color: transparent !important;
+    transition-property: background-color;
+}
+
+[data-aos="nav-animation"].aos-animate {
+    background-color: rgb(194, 169, 174) !important;
 }
 

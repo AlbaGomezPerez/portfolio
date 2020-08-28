@@ -1,9 +1,9 @@
-import React from 'react';
+
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import '../../styles/projectDetail.css';
-import back from '../../images/back.png';
 import {Row, Col, Typography, Tag} from 'antd';
 import { getReadme } from '../../services/readmeProjects';
 import PropTypes from "prop-types";
@@ -19,9 +19,19 @@ const ProjectDetail = (props) => {
         duration: 1200,
     });
 
-    const project = allProjects.find(myProject => myProject.id === projectId)
+    const project = allProjects.find(myProject => myProject.id === projectId);
 
-    if(project) {
+    const iconsTools = () => {
+        console.log('herramientas');
+        const elemento = document.querySelector('.details');
+        console.log({ elemento });
+    };
+
+    useEffect(() => {
+        iconsTools();
+    }, []);
+
+    if (project) {
         return (
             <div>
                 <Col className="details" sm={{span: 24}} md={{span: 6, offset: 4}} lg={{span: 24}}>
@@ -61,8 +71,8 @@ const ProjectDetail = (props) => {
                                         <div className="logo-container web icons__circle"></div>
                                         <div className="profile">
                                             <p className="goal-title">Herramientas</p>
-                                            {project.topics.map(topic => (
-                                                <Tag className="profile-text topics">{topic}</Tag>
+                                            {project.topics.map((topic, index) => (
+                                                <div className="profile-text topics" key={index}>{topic} </div>
                                             ))}
                                         </div>
                                     </div>
