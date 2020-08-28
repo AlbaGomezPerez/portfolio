@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "./static/css/main.062a5042.chunk.css",
-    "main.js": "./static/js/main.f6951954.chunk.js",
-    "main.js.map": "./static/js/main.f6951954.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.c98d6c9c.js",
-    "runtime-main.js.map": "./static/js/runtime-main.c98d6c9c.js.map",
-    "static/css/2.653462cc.chunk.css": "./static/css/2.653462cc.chunk.css",
-    "static/js/2.bcd54f90.chunk.js": "./static/js/2.bcd54f90.chunk.js",
-    "static/js/2.bcd54f90.chunk.js.map": "./static/js/2.bcd54f90.chunk.js.map",
+    "main.css": "./static/css/main.74745d85.chunk.css",
+    "main.js": "./static/js/main.7fd1d0c9.chunk.js",
+    "main.js.map": "./static/js/main.7fd1d0c9.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.c927428d.js",
+    "runtime-main.js.map": "./static/js/runtime-main.c927428d.js.map",
+    "static/css/2.b08c9e0c.chunk.css": "./static/css/2.b08c9e0c.chunk.css",
+    "static/js/2.b7e493c7.chunk.js": "./static/js/2.b7e493c7.chunk.js",
+    "static/js/2.b7e493c7.chunk.js.map": "./static/js/2.b7e493c7.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.9775b7a2b8683e4171a1574593e53cab.js": "./precache-manifest.9775b7a2b8683e4171a1574593e53cab.js",
+    "precache-manifest.57fa7ab79b40a68081f95b8f1bd9dd13.js": "./precache-manifest.57fa7ab79b40a68081f95b8f1bd9dd13.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/2.653462cc.chunk.css.map": "./static/css/2.653462cc.chunk.css.map",
-    "static/css/main.062a5042.chunk.css.map": "./static/css/main.062a5042.chunk.css.map",
-    "static/media/header.css": "./static/media/Bridgeforbillions_1.2ad89bdd.png"
+    "static/css/2.b08c9e0c.chunk.css.map": "./static/css/2.b08c9e0c.chunk.css.map",
+    "static/css/main.74745d85.chunk.css.map": "./static/css/main.74745d85.chunk.css.map",
+    "static/media/alba.jpg": "./static/media/alba.ed418d7c.jpg",
+    "static/media/contact.css": "./static/media/twitter.4f19c98b.png",
+    "static/media/video.mp4": "./static/media/video.8bfe0656.mp4"
   }
 }
