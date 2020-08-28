@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/landing.css';
 import Wave from 'react-wavify';
 import AOS from 'aos';
-import video from '../images/video.mp4';
+// import video from '../images/video.mp4';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 const Landing = () => {
@@ -13,9 +13,9 @@ const Landing = () => {
 
     return (
         <div className="landing-video" data-aos="welcome-page">
-            <video autoPlay muted loop id="myVideo">
-                <source src={video} type="video/mp4"></source>
-            </video>
+            {/*<video autoPlay muted loop id="myVideo">*/}
+            {/*    <source src={video} type="video/mp4"></source>*/}
+            {/*</video>*/}
 
             <h2 className="landing-text">Alba Gómez</h2>
             {/*<i className="large material-icons" >arrow_drop_down</i>*/}
