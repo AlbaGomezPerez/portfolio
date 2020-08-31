@@ -25,16 +25,7 @@ function Main (props) {
             path="/aboutMe"
             render={routerProps => (
                 <div>
-                  <AboutMe />
-                </div>
-            )}
-        />
-        <Route
-
-            path="/proyects"
-            render={routerProps => (
-                <div>
-                  <Proyects
+                  <AboutMe
                       allProjects={allProjects}
                       allImages={allImages}
                       allReadmes={allReadmes}
@@ -42,12 +33,25 @@ function Main (props) {
                 </div>
             )}
         />
-        <Route
-            path="/contact"
-            render={routerProps => (
-                <Contact/>
-            )}
-        />
+        {/*<Route*/}
+
+        {/*    path="/proyects"*/}
+        {/*    render={routerProps => (*/}
+        {/*        <div>*/}
+        {/*          <Proyects*/}
+        {/*              allProjects={allProjects}*/}
+        {/*              allImages={allImages}*/}
+        {/*              allReadmes={allReadmes}*/}
+        {/*          />*/}
+        {/*        </div>*/}
+        {/*    )}*/}
+        {/*/>*/}
+        {/*<Route*/}
+        {/*    path="/contact"*/}
+        {/*    render={routerProps => (*/}
+        {/*        <Contact/>*/}
+        {/*    )}*/}
+        {/*/>*/}
           <Route
               path="/project/:id"
               render={routerProps => (

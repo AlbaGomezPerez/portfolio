@@ -1,7 +1,7 @@
 
 import React, {  } from 'react';
 
-import { Card, Avatar, Row, Col, Typography } from 'antd';
+import {Card, Avatar, Row, Col, Typography, Progress} from 'antd';
 import '../../styles/proyects.css';
 import AOS from 'aos';
 import { Link } from 'react-router-dom';
@@ -23,8 +23,17 @@ function Projects(props) {
 
     return (
         <React.Fragment>
-
-            <div className="employeeStatus__container">
+            <Progress
+                className="description__line"
+                strokeColor={{
+                    '0%': '#e9b870',
+                    '100%': '#d07521',
+                }}
+                percent={100}
+                showInfo={false}
+                strokeWidth={2}
+            />
+            <div className="employeeStatus__container" id="projects">
                 <Row>
                     <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 10 }}>
                         <Row>
@@ -40,7 +49,7 @@ function Projects(props) {
                 return (
                     // eslint-disable-next-line react/no-array-index-key
                     <Col className="cards-container" id={`proyect--${index}`} key={index} xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }}>
-                            <div className="card-container">
+                            <div className="card-container" id={`project${proyect.id}`}>
                                 <Link className="CardLink" to={"/project/" + proyect.id}>
                         <Card
                         className={`item individual-card card-${index}`}
@@ -63,10 +72,7 @@ function Projects(props) {
                         />
                     </Card>
                                 </Link>
-
                             </div>
-
-
                     </Col>
                 )
             })}

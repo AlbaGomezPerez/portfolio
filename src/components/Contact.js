@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/contact.css';
-import { Typography, Col, Row } from 'antd';
+import {Typography, Col, Row, Progress, Layout} from 'antd';
+const { Footer } = Layout;
 
 
 function Contact() {
@@ -8,7 +9,20 @@ function Contact() {
 
     return (
         <React.Fragment>
-            <Col className="contact" xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 6, offset: 4 }} lg={{ span: 20 }} xl={{ span: 20 }} >
+            <Progress
+                className="description__line"
+                strokeColor={{
+                    '0%': '#b4e9c2',
+                    '100%': '#3c8056',
+                }}
+                percent={100}
+                showInfo={false}
+                strokeWidth={2}
+            />
+            <Col
+                className="contact"
+                id="contact"
+                xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 6, offset: 4 }} lg={{ span: 20 }} xl={{ span: 20 }} >
                 <Row className="contact-row">
                     <div className="contact__container">
                         <Title className="page__title contact-title" level={2}>Contacto</Title>
@@ -53,6 +67,7 @@ function Contact() {
                     </div>
                 </Row>
             </Col>
+            <Footer id="contact-footer">hola</Footer>
 
         </React.Fragment>
     )

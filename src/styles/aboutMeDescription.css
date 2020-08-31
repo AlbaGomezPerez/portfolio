@@ -23,6 +23,7 @@
 
 .profile-image {
     height: 100%;
+    border-radius: 8%;
 }
 
 .introduction-me {

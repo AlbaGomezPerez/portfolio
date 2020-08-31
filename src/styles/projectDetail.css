@@ -1,3 +1,7 @@
+.projectDetail {
+    margin: 8%;
+}
+
 .image-container {
     height: 50%;
     margin: 2%;
@@ -135,10 +139,11 @@
     width: 50%;
     height: 50px;
     margin: 2%;
+    justify-content: center;
 }
 
 .react {
-    background-image: url("../images/react.svg");
+    background-image: url("../images/react.png");
 }
 
 .css {
@@ -157,12 +162,13 @@
     background-image: url("../images/angular.png");
 }
 
-.ant {
-    background-image: url("../images/ant.svg");
+.ant-design {
+    background-image: url("../images/ant.jpg");
 }
 
 .materialize {
     background-image: url("../images/materialize.png");
+    margin-top: 3%;
 }
 
 .typescript {
@@ -170,6 +176,14 @@
 }
 
 .portfolio {
+    display: none;
+}
+
+.hooks {
+    display: none;
+}
+
+.bootstrap {
     display: none;
 }
 

@@ -1,6 +1,6 @@
 
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import '../../styles/projectDetail.css';
@@ -22,9 +22,7 @@ const ProjectDetail = (props) => {
     const project = allProjects.find(myProject => myProject.id === projectId);
 
     const iconsTools = () => {
-        console.log('herramientas');
         const elemento = document.querySelector('.details');
-        console.log({ elemento });
     };
 
     useEffect(() => {
@@ -33,11 +31,11 @@ const ProjectDetail = (props) => {
 
     if (project) {
         return (
-            <div>
+            <div className="projectDetail">
                 <Col className="details" sm={{span: 24}} md={{span: 6, offset: 4}} lg={{span: 24}}>
                     <Row className="details-image">
                         <div className="image-project-container">
-                            <Link to="/proyects">
+                            <Link to={`/aboutMe#project${projectId}`}>
                                 <div className="backContainer">
                                     <p className="backText">
                                         <i className="material-icons">keyboard_backspace</i>

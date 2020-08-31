@@ -8,7 +8,7 @@ const Footer = () => {
   return (
       <React.Fragment>
 
-    <Footer style={{ textAlign: 'center' }}>Alba Gómez Pérez ©2020</Footer>
+    <Footer id="footer" style={{ textAlign: 'center' }}>Alba Gómez Pérez ©2020</Footer>
 
       </React.Fragment>
   );

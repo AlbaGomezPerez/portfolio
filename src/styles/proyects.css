@@ -132,6 +132,17 @@ img{
     opacity: 1;
 }
 
+[data-aos="proyect--animation4"], [data-aos="proyect--animation6"] {
+    left: -50%;
+    opacity: 0;
+    transition-property: left, opacity;
+}
+
+[data-aos="proyect--animation4"].aos-animate, [data-aos="proyect--animation6"].aos-animate {
+    left: -18%;
+    opacity: 1;
+}
+
 [data-aos="proyect--animation1"], [data-aos="proyect--animation3"], [data-aos="proyect--animation5"] {
     right: -50%;
     opacity: 0;

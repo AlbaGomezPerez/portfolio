@@ -21,17 +21,16 @@ const Landing = () => {
             </video>
 
             {/*<iframe*/}
-            {/*    src={video}*/}
+            {/*    src="https://www.youtube.com/embed/D3l36prbbvA"*/}
             {/*    id="myVideo"*/}
             {/*    frameBorder="0"*/}
             {/*    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"*/}
             {/*    allowfullscreen>*/}
             {/*</iframe>*/}
 
-
-            <h2 className="landing-text">Alba Gómez</h2>
+            <div className="landing-text">
+            <h2 className="landing-name">Alba Gómez</h2>
             <span className="landing-subtext">Desarrolladora Front-End</span>
-            <i className="large material-icons arrow">arrow_drop_down</i>
 
             <div className="landing-networks">
                 <div className="landing-logo">
@@ -50,12 +49,14 @@ const Landing = () => {
                     </a>
                 </div>
             </div>
+            </div>
+            <i className="large material-icons arrow">arrow_drop_down</i>
 
             <Wave
                 mask="url(#mask)"
                 fill="white"
                 className="wave"
-                options={{ points: 4, speed: 0.2, amplitude: 70 }}>
+                options={{ points: 4, speed: 0.2, amplitude: 60 }}>
                 <defs>
                     <linearGradient id="gradient" gradientTransform="rotate(90)">
                         <stop offset="10%" stopColor="white" />
@@ -64,6 +65,18 @@ const Landing = () => {
                     {/*<mask id="mask">*/}
                     {/*    <rect x="0" y="0" width="2000" height="200" fill="url(#gradient)"  />*/}
                     {/*</mask>*/}
+                </defs>
+            </Wave>
+            <Wave
+                mask="url(#mask)"
+                fill="white"
+                className="wave2"
+                options={{ points: 4, speed: 0.2, amplitude: 80 }}>
+                <defs>
+                    <linearGradient id="gradient" gradientTransform="rotate(90)">
+                        <stop offset="10%" stopColor="red" />
+                        <stop offset="90%" stopColor="blue" />
+                    </linearGradient>
                 </defs>
             </Wave>
 

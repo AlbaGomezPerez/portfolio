@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 import { Typography, Col, Row, Progress } from 'antd';
 import AOS from 'aos';
 import '../../styles/aboutMeDescription.css';
@@ -14,7 +15,7 @@ const AboutMeDescription = () => {
     });
 
   return (
-    <div className="description__container" id="description__container">
+    <div className="description__container" id="aboutMe">
       <Row>
         <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 10 }}>
             <Row>
@@ -26,7 +27,7 @@ const AboutMeDescription = () => {
                     a fundar mi propia firma de complementos. Mi trabajo me encantaba,
                     pero necesitaba mayor estabilidad, por lo que decidí cambiar mi rumbo.
                 </p>
-                <p className="description__list">
+                <p className="description__list" id="description__list">
                     En junio de 2019 comencé mi andadura en el mundo digital, de la mano de Adalab.
                     Me formé como desarrolladora Front-End, adquiriendo conocimientos como HTML, CSS, javaScript, React, Angular...
                 </p>

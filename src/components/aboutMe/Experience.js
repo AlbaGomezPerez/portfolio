@@ -24,7 +24,7 @@ const Experience = () => {
                 showInfo={false}
                 strokeWidth={2}
             />
-            <p className="experiencie-title">Mi experiencia</p>
+            <p className="experiencie-title" id="experiencie-title">Mi experiencia</p>
             <Row className="experiencie-row">
 
                 <Col className="experiencie-col" xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 12 }}>
