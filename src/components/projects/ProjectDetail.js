@@ -71,9 +71,11 @@ const ProjectDetail = (props) => {
                                         <div className="logo-container web icons__circle"></div>
                                         <div className="profile">
                                             <p className="goal-title">Herramientas</p>
+                                            <div className="topics-container">
                                             {project.topics.map((topic, index) => (
-                                                <div className="profile-text topics" key={index}>{topic} </div>
+                                                <div className={`topics ${topic}`} key={index}></div>
                                             ))}
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="logo">

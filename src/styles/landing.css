@@ -24,12 +24,12 @@
 
 
 .landing-text {
-    background-color: rgb(218, 247, 239);
     background-color: transparent;
+    color: white;
     width: 40%;
     display: flex;
     justify-content: center;
-    height: 14%;
+    height: 16%;
     align-items: center;
     box-shadow: 8px 10px 100px #888888;
     border: 1px solid #998889;
@@ -37,10 +37,53 @@
     position: absolute;
 }
 
-/*.material-icons {*/
-/*    z-index: 100;*/
-/*    cursor: pointer;*/
-/*}*/
+.landing-subtext {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 54%;
+    font-size: 20px;
+}
+
+.arrow {
+    z-index: 100;
+    cursor: pointer;
+    position: absolute;
+    top: 80%;
+    background-color: transparent !important;
+    color: #805058 !important;
+    font-size: 100px !important;
+}
+
+.landing-networks {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 60%;
+    opacity: 0.3;
+
+}
+
+.landing-logo {
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    margin: 1%;
+    border-radius: 50%;
+}
+
+.network-image-landing {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 18%;
+    align-items: center;
+    height: 60%;
+
+}
 
 
 

@@ -2,8 +2,11 @@ import React from 'react';
 import '../styles/landing.css';
 import Wave from 'react-wavify';
 import AOS from 'aos';
-// import video from '../images/video.mp4';
+import video from '../images/video.mov';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import twitter from '../images/twitter.png';
+import linkedin from '../images/linkedin.png';
+import github from '../images/gitHub.png';
 
 const Landing = () => {
     AOS.init({
@@ -13,12 +16,31 @@ const Landing = () => {
 
     return (
         <div className="landing-video" data-aos="welcome-page">
-            {/*<video autoPlay muted loop id="myVideo">*/}
-            {/*    <source src={video} type="video/mp4"></source>*/}
-            {/*</video>*/}
+            <video autoPlay muted loop id="myVideo">
+                <source src={video} type="video/mp4"></source>
+            </video>
 
             <h2 className="landing-text">Alba Gómez</h2>
-            {/*<i className="large material-icons" >arrow_drop_down</i>*/}
+            <span className="landing-subtext">Desarrolladora Front-End</span>
+            <i className="large material-icons arrow">arrow_drop_down</i>
+
+            <div className="landing-networks">
+                <div className="landing-logo">
+                    <a href="https://twitter.com/GomezPerezAlba" target="_blank" rel="noopener noreferrer">
+                    <img className="network-image-landing" src={twitter}></img>
+                    </a>
+                </div>
+                <div className="landing-logo">
+                    <a href="https://www.linkedin.com/in/albagomezperez/" target="_blank" rel="noopener noreferrer">
+                    <img className="network-image-landing" src={linkedin}></img>
+                    </a>
+                </div>
+                <div className="landing-logo">
+                    <a href="https://github.com/AlbaGomezPerez" target="_blank" rel="noopener noreferrer">
+                    <img className="network-image-landing" src={github}></img>
+                    </a>
+                </div>
+            </div>
 
             <Wave
                 mask="url(#mask)"

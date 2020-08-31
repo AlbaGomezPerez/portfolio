@@ -124,12 +124,54 @@
     display: flex;
 }
 
-.topics {
-    text-transform: capitalize;
-    background-image: url("../images/react.png");
-    background-size: cover;
+.topics-container {
+    display: flex;
 }
 
+.topics {
+    text-transform: capitalize;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 50px;
+    margin: 2%;
+}
+
+.react {
+    background-image: url("../images/react.svg");
+}
+
+.css {
+    background-image: url("../images/css.jpg");
+}
+
+.javascript {
+    background-image: url("../images/javascript.png");
+}
+
+.html {
+    background-image: url("../images/html.jpg");
+}
+
+.angular {
+    background-image: url("../images/angular.png");
+}
+
+.ant {
+    background-image: url("../images/ant.svg");
+}
+
+.materialize {
+    background-image: url("../images/materialize.png");
+}
+
+.typescript {
+    background-image: url("../images/typescript.png");
+}
+
+.portfolio {
+    display: none;
+}
 
 [data-aos="image-container"] {
     bottom: -50%;
