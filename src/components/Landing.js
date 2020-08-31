@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/landing.css';
 import Wave from 'react-wavify';
 import AOS from 'aos';
-import video from '../images/video.mov';
+import video from '../images/videoWave.mp4';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import twitter from '../images/twitter.png';
 import linkedin from '../images/linkedin.png';
@@ -19,6 +19,15 @@ const Landing = () => {
             <video autoPlay muted loop id="myVideo">
                 <source src={video} type="video/mp4"></source>
             </video>
+
+            {/*<iframe*/}
+            {/*    src={video}*/}
+            {/*    id="myVideo"*/}
+            {/*    frameBorder="0"*/}
+            {/*    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"*/}
+            {/*    allowfullscreen>*/}
+            {/*</iframe>*/}
+
 
             <h2 className="landing-text">Alba Gómez</h2>
             <span className="landing-subtext">Desarrolladora Front-End</span>
@@ -63,3 +72,7 @@ const Landing = () => {
 };
 
 export default Landing;
+
+
+{/*<iframe width="560" height="315" src="https://www.youtube.com/embed/D3l36prbbvA" frameBorder="0"*/}
+{/*        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>*/}
