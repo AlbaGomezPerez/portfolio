@@ -63,10 +63,16 @@
     z-index: 100;
     cursor: pointer;
     position: absolute;
-    top: 80%;
+    top: 70%;
     background-color: transparent !important;
-    color: #805058 !important;
+    color: rgb(128, 112, 115) !important;
     font-size: 100px !important;
+}
+
+.link-icon {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 
 .landing-networks {
@@ -75,7 +81,7 @@
     justify-content: center;
     position: absolute;
     top: 120%;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .landing-logo {
@@ -98,29 +104,3 @@
 
 
 
-/*.disappeared {*/
-/*    animation-duration: 10s;*/
-/*    animation-name: disapear;*/
-/*}*/
-
-
-/*@keyframes disapear {*/
-/*    from {*/
-/*        top: 50%;*/
-/*  }*/
-
-/*    to {*/
-/*        position: relative;*/
-/*        top: -100%;*/
-/*    }*/
-/*}*/
-
-/*[data-aos="welcome-page"] {*/
-/*    opacity: 1;*/
-/*    transition-property: opacity;*/
-/*}*/
-
-/*[data-aos="welcome-page"].aos-animate {*/
-/*    opacity: 0;*/
-/*    top: -50%*/
-/*}*/

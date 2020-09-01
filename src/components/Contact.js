@@ -1,11 +1,18 @@
 import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 import '../styles/contact.css';
-import {Typography, Col, Row, Progress, Layout} from 'antd';
+import { Typography, Col, Row, Progress, Layout } from 'antd';
+
 const { Footer } = Layout;
 
 
 function Contact() {
     const { Title } = Typography;
+
+    AOS.init({
+        duration: 1200,
+    });
 
     return (
         <React.Fragment>
@@ -36,14 +43,18 @@ function Contact() {
                         <div className="network__section">
                             <a href="https://twitter.com/GomezPerezAlba" target="_blank" rel="noopener noreferrer">
                                 <div className="logo">
-                                    <div className="logo-container twitter icons__circle"></div>
+                                    <div
+                                        className="logo-container twitter icons__circle"
+                                        data-aos="icons__circle"></div>
                                     <div className="profile">
                                        <span className="profile-text">@GomezPerezAlba</span> </div>
                                 </div>
                             </a>
                             <a href="https://www.linkedin.com/in/albagomezperez/" target="_blank" rel="noopener noreferrer">
                                 <div className="logo">
-                                    <div className="logo-container linkedin icons__circle"></div>
+                                    <div
+                                        className="logo-container linkedin icons__circle"
+                                        data-aos="icons__circle"></div>
                                     <div className="profile">
                                         <span className="profile-text">albagomezperez</span> </div>
                                 </div>
@@ -51,14 +62,18 @@ function Contact() {
 
                             <a href="https://github.com/AlbaGomezPerez" target="_blank" rel="noopener noreferrer">
                                 <div className="logo">
-                                    <div className="logo-container github icons__circle"></div>
+                                    <div
+                                        className="logo-container github icons__circle"
+                                        data-aos="icons__circle"></div>
                                     <div className="profile">
                                         <span className="profile-text">AlbaGomezPerez</span> </div>
                                 </div>
                             </a>
 
                             <div className="logo">
-                                <div className="logo-container email icons__circle"></div>
+                                <div
+                                    className="logo-container email icons__circle"
+                                    data-aos="icons__circle"></div>
                                 <div className="profile">
                                     <span className="profile-text">albagope@gmail.com</span> </div>
                             </div>

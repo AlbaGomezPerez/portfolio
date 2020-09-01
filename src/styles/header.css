@@ -1,8 +1,7 @@
 .nav-wrapper {
     position: fixed;
     z-index: 1;
-    /*background-color: rgb(230, 199, 205);*/
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .nav-info {
@@ -10,14 +9,26 @@
     justify-content: center;
 }
 
-.nav-tab {
+.link {
+    width: 10%;
+}
+
+.tab-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 70%;
     font-size: 22px;
 }
 
-.nav-tab:hover {
+.tab-container:hover {
     font-size: 28px;
     color: white;
     background-color: rgba(0,0,0,0.1);
+}
+
+a:hover {
+    color: white !important;
 }
 
 nav ul a:hover {
@@ -31,6 +42,6 @@ nav ul a:hover {
 }
 
 [data-aos="nav-animation"].aos-animate {
-    background-color: rgb(194, 169, 174) !important;
+    background-color: rgb(128, 112, 115) !important;
 }
 
