@@ -35,6 +35,7 @@ const ProjectDetail = (props) => {
                 <Col className="details" sm={{span: 24}} md={{span: 6, offset: 4}} lg={{span: 24}}>
                     <Row className="details-image">
                         <div className="image-project-container">
+                            <div className="header-project">
                             <Link to={`/aboutMe#project${projectId}`}>
                                 <div className="backContainer">
                                     <p className="backText">
@@ -45,6 +46,7 @@ const ProjectDetail = (props) => {
                             <Title className="page__title contact-title" level={2}>
                                 {getReadme(project.name, allReadmes)}
                             </Title>
+                            </div>
                             <div className="image-container" data-aos="image-container">
                                 <img
                                     className="image-project-detail"

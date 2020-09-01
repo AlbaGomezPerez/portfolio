@@ -15,7 +15,7 @@ const AboutMeDescription = () => {
     });
 
   return (
-    <div className="description__container" id="aboutMe">
+    <div className="description__container">
       <Row>
         <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 10 }}>
             <Row>

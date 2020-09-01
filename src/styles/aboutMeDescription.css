@@ -1,5 +1,10 @@
+#aboutMe{
+    height: 200px;
+    /*background-color: pink;*/
+    color: white;
+}
+
 .description__container{
-	margin-top: 50px;
 	margin-bottom: 30px;
 }
 .page__description__container {

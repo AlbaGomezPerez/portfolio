@@ -15,6 +15,11 @@
     padding: 2%;
 }
 
+.header-project {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 6%;
+}
 
 .goal-title {
     font-size: 22px;
@@ -88,9 +93,7 @@
     word-wrap: break-word;
 }
 
-.nav-proyect {
-    background-color: #bfccc9;
-}
+
 
 
 
@@ -106,14 +109,10 @@
     font-size: 50px;
     display: flex;
     justify-content: center;
-    background-color: #F2F2F2;
     border-radius: 80%;
     width: 8%;
 }
 
-.material-icons:hover {
-    background-color: #cccccc;
-}
 
 .backContainer {
     justify-content: end;
