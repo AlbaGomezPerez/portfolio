@@ -6,7 +6,7 @@
 }
 
 .card-container {
-    height: 400px;
+    height: 430px;
 }
 
 .individual-card {
@@ -16,7 +16,7 @@
     height: 100%;
     margin: auto;
     margin-top: 1%;
-    margin-bottom: 1%;
+    /*margin-bottom: 1%;*/
     background-color: #F2F2F2;
     padding-top: 3%;
     box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.35);
@@ -37,7 +37,13 @@
     width: 100%;
     height: 75px;
     margin-top: 0;
-    padding: 2%;
+    padding: 0;
+    padding-left: 2%;
+    /*margin-bottom: 2%;*/
+}
+
+.allTopics {
+    display: flex;
 }
 
 .ant-card-meta-title {
@@ -48,10 +54,68 @@
     padding: 0;
 }
 
+.caption-container {
+    background-color: pink;
+    display: flex;
+}
+
 img{
     height: 80%;
     justify-content: center;
     display: flex;
+}
+
+.projectTopics {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 10%;
+    height: 40px;
+}
+
+.project-react {
+    background-image: url("../images/react.png");
+}
+
+.project-css {
+    background-image: url("../images/css.png");
+}
+
+.project-javascript {
+    background-image: url("../images/javascript.png");
+}
+
+.project-html {
+    background-image: url("../images/html.png");
+}
+
+.project-angular {
+    background-image: url("../images/angular.png");
+}
+
+.project-ant-design {
+    background-image: url("../images/ant.png");
+}
+
+.project-materialize {
+    background-image: url("../images/materialize.png");
+    margin-top: 2%;
+}
+
+.project-typescript {
+    background-image: url("../images/typescript.png");
+    margin-left: 2%;
+}
+
+.project-portfolio {
+    display: none;
+}
+
+.project-hooks {
+    display: none;
+}
+
+.project-bootstrap {
+    display: none;
 }
 
 .proyect-image:hover {

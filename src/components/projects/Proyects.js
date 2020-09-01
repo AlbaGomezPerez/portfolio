@@ -9,11 +9,15 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 import PropTypes from 'prop-types';
 import alba from '../../images/alba.jpg';
 import { getReadme } from '../../services/readmeProjects';
+import {GetProjectImage} from "../../services/getProjects";
 
 function Projects(props) {
     const { Meta } = Card;
     const { Title } = Typography;
     const { allProjects, allImages, allReadmes } = props;
+
+
+
 
     AOS.init({
         duration: 1200,
@@ -65,11 +69,22 @@ function Projects(props) {
                         actions={[
                         ]}
                     >
+                            <div className="">
                         <Meta
                             className="caption"
                             avatar={<Avatar src={alba} />}
                             title={getReadme(proyect.name, allReadmes)}
+
+                            description={
+                                <div className="allTopics">
+                                    {proyect.topics.map(topic => {
+                                    return <p className={`projectTopics project-${topic}`}></p>
+                                })}
+                                </div>
+                            }
                         />
+                            </div>
+
 
                     </Card>
                                 </Link>
