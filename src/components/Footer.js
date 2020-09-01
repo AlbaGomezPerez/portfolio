@@ -1,6 +1,5 @@
 import React from 'react';
 import { Layout } from 'antd';
-import Wave from 'react-wavify'
 
 const Footer = () => {
   const { Footer } = Layout;

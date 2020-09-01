@@ -9,7 +9,6 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 import PropTypes from 'prop-types';
 import alba from '../../images/alba.jpg';
 import { getReadme } from '../../services/readmeProjects';
-import {GetProjectImage} from "../../services/getProjects";
 
 function Projects(props) {
     const { Meta } = Card;
@@ -76,8 +75,8 @@ function Projects(props) {
 
                             description={
                                 <div className="allTopics">
-                                    {proyect.topics.map(topic => {
-                                    return <p className={`projectTopics project-${topic}`}></p>
+                                    {proyect.topics.map((topic, index )=> {
+                                    return <p key={index} className={`projectTopics project-${topic}`}></p>
                                 })}
                                 </div>
                             }

@@ -1,10 +1,10 @@
 
-import React, { useEffect } from 'react';
+import React, {  } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import '../../styles/projectDetail.css';
-import {Row, Col, Typography, Tag} from 'antd';
+import {Row, Col, Typography } from 'antd';
 import { getReadme } from '../../services/readmeProjects';
 import PropTypes from "prop-types";
 
@@ -23,13 +23,7 @@ const ProjectDetail = (props) => {
 
     const project = allProjects.find(myProject => myProject.id === projectId);
 
-    const iconsTools = () => {
-        const elemento = document.querySelector('.details');
-    };
 
-    useEffect(() => {
-        iconsTools();
-    }, []);
 
     if (project) {
         return (
