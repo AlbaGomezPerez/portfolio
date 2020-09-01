@@ -1,8 +1,9 @@
 import React from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 import '../styles/landing.css';
 import Wave from 'react-wavify';
 import AOS from 'aos';
-import video from '../images/videoWave.mp4';
+import video from '../images/Computer.mp4';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import twitter from '../images/twitter.png';
 import linkedin from '../images/linkedin.png';
@@ -50,7 +51,9 @@ const Landing = () => {
                 </div>
             </div>
             </div>
-            <i className="large material-icons arrow">arrow_drop_down</i>
+            <Link className="link-icon" to="/aboutMe#aboutMe">
+             <i className="large material-icons arrow">arrow_drop_down</i>
+            </Link>
 
             <Wave
                 mask="url(#mask)"

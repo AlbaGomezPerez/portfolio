@@ -7,7 +7,7 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 const Header = () => {
     AOS.init({
-        duration: 20000,
+        duration: 100000,
     });
 
   // return (
@@ -29,14 +29,14 @@ const Header = () => {
     return (
           <nav className="nav-wrapper" data-aos="nav-animation">
             <ul className="hide-on-med-and-down nav-info">
-                <Link to="/aboutMe#aboutMe">
-                    <li><p className="nav-tab">Sobre mi</p></li>
+                <Link className="link" to="/aboutMe#aboutMe">
+                    <li className="tab-container"><p className="nav-tab">Sobre mi</p></li>
                 </Link>
-                <Link to="/aboutMe#projects">
-                    <li><p className="nav-tab">Proyectos</p></li>
+                <Link className="link" to="/aboutMe#projects">
+                    <li className="tab-container"><p className="nav-tab">Proyectos</p></li>
                 </Link>
-                <Link to="/aboutMe#contact">
-                    <li><p className="nav-tab">Contacto</p></li>
+                <Link className="link" to="/aboutMe#contact">
+                    <li className="tab-container"><p className="nav-tab">Contacto</p></li>
                 </Link>
             </ul>
           </nav>

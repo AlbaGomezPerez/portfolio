@@ -38,11 +38,13 @@
 .profile {
     color: #996d75;
     padding-top: 6%;
+    margin: 2%;
 }
 
 .logo {
     display: flex;
 }
+
 
 @media all and (max-width: 768px) {
     .logo {
@@ -141,10 +143,7 @@
     }
 }
 
-.icons__circle {
-    animation-duration: 4s;
-    animation-name: slidein;
-}
+
 
 .ant-typography.page__title {
     color: rgb(153, 109, 117);
@@ -152,14 +151,15 @@
     font-weight: bold;
 }
 
-@keyframes slidein {
-    from {
-        transform: rotate(180deg);
-        opacity: 0;
-    }
 
-    to {
-        transform: rotate(360deg);
-        opacity: 100%;
-    }
+
+[data-aos="icons__circle"] {
+    transform: rotate(180deg);
+    opacity: 0;
+    transition-property: transform, opacity;
+}
+
+[data-aos="icons__circle"].aos-animate {
+    transform: rotate(360deg);
+    opacity: 1;
 }
