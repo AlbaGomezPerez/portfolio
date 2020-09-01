@@ -16,11 +16,10 @@ function Projects(props) {
     const { Title } = Typography;
     const { allProjects, allImages, allReadmes } = props;
 
-
-
-
     AOS.init({
         duration: 1200,
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        mirror: true,
     });
 
 
