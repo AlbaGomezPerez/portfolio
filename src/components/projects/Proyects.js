@@ -70,6 +70,7 @@ function Projects(props) {
                             avatar={<Avatar src={alba} />}
                             title={getReadme(proyect.name, allReadmes)}
                         />
+
                     </Card>
                                 </Link>
                             </div>

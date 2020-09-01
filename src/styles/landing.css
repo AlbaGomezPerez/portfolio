@@ -31,7 +31,7 @@
 
 
 .landing-text {
-    background-color: transparent;
+    background-color: #b3b3b3;
     border-radius: 10px;
     width: 40%;
     display: flex;
@@ -80,7 +80,7 @@
     justify-content: center;
     position: absolute;
     top: 120%;
-    opacity: 0.5;
+    /*opacity: 0.5;*/
 }
 
 .landing-logo {
@@ -92,13 +92,51 @@
 }
 
 .network-image-landing {
-    display: flex;
-    justify-content: center;
+    /*display: flex;*/
+    /*justify-content: center;*/
     margin: auto;
-    margin-top: 18%;
-    align-items: center;
-    height: 60%;
+    /*margin-top: 18%;*/
+    /*align-items: center;*/
+    height: 100%;
 
+}
+
+.twitterLanding {
+    background-image: url("../images/twitter.png");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    position: center;
+    margin-top: 22%;
+    margin-left: 16%;
+}
+
+.twitterLanding:hover {
+    background-image: url("../images/twitter-original.png");
+}
+
+.githubLanding {
+    background-image: url("../images/gitHub.png");
+    background-repeat: no-repeat;
+    background-size: 96%;
+    position: relative;
+    margin-top: 10%;
+    margin-left: 4%;
+}
+.githubLanding:hover {
+    background-image: url("../images/gitHub-original.png");
+}
+
+.linkedinLanding {
+    background-image: url("../images/linkedin.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    position: center;
+    margin-top: 18%;
+    margin-left: 16%;
+}
+
+.linkedinLanding:hover {
+    background-image: url("../images/linkedin-original.png");
 }
 
 
