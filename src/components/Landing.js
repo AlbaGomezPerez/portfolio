@@ -36,17 +36,17 @@ const Landing = () => {
             <div className="landing-networks">
                 <div className="landing-logo">
                     <a href="https://twitter.com/GomezPerezAlba" target="_blank" rel="noopener noreferrer">
-                    <img className="network-image-landing" src={twitter}></img>
+                    <div className="network-image-landing twitterLanding"></div>
                     </a>
                 </div>
                 <div className="landing-logo">
                     <a href="https://www.linkedin.com/in/albagomezperez/" target="_blank" rel="noopener noreferrer">
-                    <img className="network-image-landing" src={linkedin}></img>
+                    <div className="network-image-landing linkedinLanding" ></div>
                     </a>
                 </div>
                 <div className="landing-logo">
                     <a href="https://github.com/AlbaGomezPerez" target="_blank" rel="noopener noreferrer">
-                    <img className="network-image-landing" src={github}></img>
+                    <div className="network-image-landing githubLanding" ></div>
                     </a>
                 </div>
             </div>
