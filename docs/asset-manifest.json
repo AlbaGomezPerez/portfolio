@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "./static/css/main.6ad233e8.chunk.css",
-    "main.js": "./static/js/main.df978241.chunk.js",
-    "main.js.map": "./static/js/main.df978241.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.c927428d.js",
-    "runtime-main.js.map": "./static/js/runtime-main.c927428d.js.map",
-    "static/css/2.b08c9e0c.chunk.css": "./static/css/2.b08c9e0c.chunk.css",
-    "static/js/2.2a030217.chunk.js": "./static/js/2.2a030217.chunk.js",
-    "static/js/2.2a030217.chunk.js.map": "./static/js/2.2a030217.chunk.js.map",
-    "index.html": "./index.html",
-    "precache-manifest.e01330c7c4e142dbb64bb35f4917d92a.js": "./precache-manifest.e01330c7c4e142dbb64bb35f4917d92a.js",
-    "service-worker.js": "./service-worker.js",
-    "static/css/2.b08c9e0c.chunk.css.map": "./static/css/2.b08c9e0c.chunk.css.map",
-    "static/css/main.6ad233e8.chunk.css.map": "./static/css/main.6ad233e8.chunk.css.map",
-    "static/media/Computer.mp4": "./static/media/Computer.4c5a8349.mp4",
-    "static/media/alba.jpg": "./static/media/alba.ed418d7c.jpg",
-    "static/media/proyects.css": "./static/media/typescript.4e96f111.png",
-    "static/media/contact.css": "./static/media/twitter.4f19c98b.png"
+    "main.css": "/portfolio/static/css/main.dc4633dd.chunk.css",
+    "main.js": "/portfolio/static/js/main.df978241.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.df978241.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.dcb3ef65.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.dcb3ef65.js.map",
+    "static/css/2.b08c9e0c.chunk.css": "/portfolio/static/css/2.b08c9e0c.chunk.css",
+    "static/js/2.a67ae758.chunk.js": "/portfolio/static/js/2.a67ae758.chunk.js",
+    "static/js/2.a67ae758.chunk.js.map": "/portfolio/static/js/2.a67ae758.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.61d3053b021bd1d46c5a23eeb1cf7d86.js": "/portfolio/precache-manifest.61d3053b021bd1d46c5a23eeb1cf7d86.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/2.b08c9e0c.chunk.css.map": "/portfolio/static/css/2.b08c9e0c.chunk.css.map",
+    "static/css/main.dc4633dd.chunk.css.map": "/portfolio/static/css/main.dc4633dd.chunk.css.map",
+    "static/media/Computer.mp4": "/portfolio/static/media/Computer.4c5a8349.mp4",
+    "static/media/alba.jpg": "/portfolio/static/media/alba.ed418d7c.jpg",
+    "static/media/proyects.css": "/portfolio/static/media/typescript.4e96f111.png",
+    "static/media/contact.css": "/portfolio/static/media/twitter.4f19c98b.png"
   }
 }

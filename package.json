@@ -2,7 +2,7 @@
   "name": "albagomez-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "https://albagomezperez.github.io/portfolio/",
   "dependencies": {
     "@ant-design/colors": "^3.2.2",
     "@ant-design/icons": "^4.2.1",
