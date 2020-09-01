@@ -16,8 +16,19 @@ function Main (props) {
   return (
     <div className="main">
       <Switch>
+          <Route
+              exact
+              path="/project/:id"
+              render={routerProps => (
+                  <ProjectDetail
+                      Match={routerProps.match}
+                      allProjects={allProjects}
+                      allImages={allImages}
+                      allReadmes={allReadmes}
+                  />
+              )}
+          />
         <Route
-            exact
             path="/"
             render={routerProps => (
                 <div>
@@ -29,36 +40,7 @@ function Main (props) {
                 </div>
             )}
         />
-        {/*<Route*/}
 
-        {/*    path="/proyects"*/}
-        {/*    render={routerProps => (*/}
-        {/*        <div>*/}
-        {/*          <Proyects*/}
-        {/*              allProjects={allProjects}*/}
-        {/*              allImages={allImages}*/}
-        {/*              allReadmes={allReadmes}*/}
-        {/*          />*/}
-        {/*        </div>*/}
-        {/*    )}*/}
-        {/*/>*/}
-        {/*<Route*/}
-        {/*    path="/contact"*/}
-        {/*    render={routerProps => (*/}
-        {/*        <Contact/>*/}
-        {/*    )}*/}
-        {/*/>*/}
-          <Route
-              path="/project/:id"
-              render={routerProps => (
-                  <ProjectDetail
-                      Match={routerProps.match}
-                      allProjects={allProjects}
-                      allImages={allImages}
-                      allReadmes={allReadmes}
-                  />
-              )}
-          />
       </Switch>
     </div>
   );
