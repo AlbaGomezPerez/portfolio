@@ -18,7 +18,7 @@ function Main (props) {
       <Switch>
         <Route
             exact
-            path="/aboutMe"
+            path="/"
             render={routerProps => (
                 <div>
                   <AboutMe
