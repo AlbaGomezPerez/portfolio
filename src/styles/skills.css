@@ -37,3 +37,15 @@
     opacity: 1;
 }
 
+@media all and (max-width: 1100px) {
+    .percentage__section {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .percentage__circle {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
