@@ -5,9 +5,6 @@ import Wave from 'react-wavify';
 import AOS from 'aos';
 import video from '../images/Computer.mp4';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-import twitter from '../images/twitter.png';
-import linkedin from '../images/linkedin.png';
-import github from '../images/gitHub.png';
 
 const Landing = () => {
     AOS.init({
@@ -20,14 +17,6 @@ const Landing = () => {
             <video autoPlay muted loop id="myVideo">
                 <source src={video} type="video/mp4"></source>
             </video>
-
-            {/*<iframe*/}
-            {/*    src="https://www.youtube.com/embed/D3l36prbbvA"*/}
-            {/*    id="myVideo"*/}
-            {/*    frameBorder="0"*/}
-            {/*    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"*/}
-            {/*    allowfullscreen>*/}
-            {/*</iframe>*/}
 
             <div className="landing-text">
             <h2 className="landing-name">Alba Gómez</h2>
@@ -65,9 +54,6 @@ const Landing = () => {
                         <stop offset="10%" stopColor="white" />
                         <stop offset="90%" stopColor="black" />
                     </linearGradient>
-                    {/*<mask id="mask">*/}
-                    {/*    <rect x="0" y="0" width="2000" height="200" fill="url(#gradient)"  />*/}
-                    {/*</mask>*/}
                 </defs>
             </Wave>
             <Wave
@@ -90,5 +76,3 @@ const Landing = () => {
 export default Landing;
 
 
-{/*<iframe width="560" height="315" src="https://www.youtube.com/embed/D3l36prbbvA" frameBorder="0"*/}
-{/*        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>*/}

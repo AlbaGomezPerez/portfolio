@@ -1,5 +1,4 @@
 import React from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
 import { Typography, Col, Row, Progress } from 'antd';
 import AOS from 'aos';
 import '../../styles/aboutMeDescription.css';
