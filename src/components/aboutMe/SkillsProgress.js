@@ -7,6 +7,8 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 const Results = () => {
   AOS.init({
     duration: 3000,
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    mirror: true,
   });
 
   return (

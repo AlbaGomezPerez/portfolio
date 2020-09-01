@@ -12,6 +12,8 @@ function Contact() {
 
     AOS.init({
         duration: 1200,
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        mirror: true,
     });
 
     return (

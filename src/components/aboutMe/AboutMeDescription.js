@@ -12,6 +12,8 @@ const AboutMeDescription = () => {
   const { Title } = Typography;
     AOS.init({
         duration: 3000,
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        mirror: true,
     });
 
   return (

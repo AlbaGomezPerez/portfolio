@@ -17,6 +17,8 @@ const ProjectDetail = (props) => {
 
     AOS.init({
         duration: 1200,
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        mirror: true,
     });
 
     const project = allProjects.find(myProject => myProject.id === projectId);
