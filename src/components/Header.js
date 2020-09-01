@@ -28,7 +28,7 @@ const Header = () => {
   // );
     return (
           <nav className="nav-wrapper" data-aos="nav-animation">
-            <ul className="hide-on-med-and-down nav-info">
+            <ul className="nav-info">
                 <Link className="link" to="/aboutMe#aboutMe">
                     <li className="tab-container"><p className="nav-tab">Sobre mi</p></li>
                 </Link>

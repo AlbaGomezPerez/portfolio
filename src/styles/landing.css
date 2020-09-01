@@ -9,7 +9,6 @@
 }
 
 #myVideo {
-    /*position: absolute;*/
     height: 60%;
     width: 100vw;
 }
@@ -18,7 +17,7 @@
     position: absolute;
     bottom: -14%;
     height: 30%;
-    background-color: transparent !important;
+    background-color: transparent ;
 }
 
 .wave2 {
@@ -45,9 +44,11 @@
     top: 36%;
 }
 
+
 .landing-name {
     color: white;
 }
+
 
 .landing-subtext {
     color: white;
@@ -80,7 +81,6 @@
     justify-content: center;
     position: absolute;
     top: 120%;
-    /*opacity: 0.5;*/
 }
 
 .landing-logo {
@@ -91,14 +91,10 @@
     border-radius: 50%;
 }
 
-.network-image-landing {
-    /*display: flex;*/
-    /*justify-content: center;*/
-    margin: auto;
-    /*margin-top: 18%;*/
-    /*align-items: center;*/
-    height: 100%;
 
+.network-image-landing {
+    margin: auto;
+    height: 100%;
 }
 
 .twitterLanding {
@@ -139,5 +135,53 @@
     background-image: url("../images/linkedin-original.png");
 }
 
+@media all and (max-width: 1370px) {
+    .landing-name {
+        font-size: 30px;
+    }
+    .landing-text {
+        width: 60%;
+        height: 12%;
+        top: 12%;
+        z-index: 50;
+    }
+    .landing-subtext {
+        font-size: 18px;
+    }
+    .landing-logo {
+        height: 50px;
+        width: 50px;
+        opacity: 1;
+        z-index: 50;
+    }
+    .arrow {
+      top: 30%;
+      z-index: 50;
+    }
+    .wave {
+        bottom: 6%;
+        /*opacity: 0.2;*/
+        height: 500px;
+        z-index: 20;
+    }
+    .wave2 {
+        bottom: 10%;
+        height: 500px;
+        z-index: 20;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .wave {
+        bottom: 18%;
+        /*opacity: 0.2;*/
+        height: 500px;
+        z-index: 20;
+    }
+    .wave2 {
+        bottom: 20%;
+        z-index: 20;
+    }
+}
 
 

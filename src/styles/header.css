@@ -45,3 +45,15 @@ nav ul a:hover {
     background-color: rgb(128, 112, 115) !important;
 }
 
+@media all and (max-width: 1370px) {
+    .nav-tab {
+        font-size: 16px;
+    }
+    .link {
+        width: 20%;
+    }
+    .nav-wrapper {
+        z-index: 100;
+    }
+}
+
