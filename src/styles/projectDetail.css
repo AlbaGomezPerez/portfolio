@@ -146,7 +146,7 @@
 }
 
 .css {
-    background-image: url("../images/css.jpg");
+    background-image: url("../images/css.png");
 }
 
 .javascript {
@@ -154,7 +154,7 @@
 }
 
 .html {
-    background-image: url("../images/html.jpg");
+    background-image: url("../images/html.png");
 }
 
 .angular {
@@ -162,7 +162,7 @@
 }
 
 .ant-design {
-    background-image: url("../images/ant.jpg");
+    background-image: url("../images/ant.png");
 }
 
 .materialize {
