@@ -40,7 +40,7 @@ const Landing = () => {
                 </div>
             </div>
             </div>
-            <Link className="link-icon" to="/aboutMe#aboutMe">
+            <Link className="link-icon" to="#aboutMe">
              <i className="large material-icons arrow">arrow_drop_down</i>
             </Link>
 

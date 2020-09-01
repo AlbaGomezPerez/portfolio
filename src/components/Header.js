@@ -29,13 +29,13 @@ const Header = () => {
     return (
           <nav className="nav-wrapper" data-aos="nav-animation">
             <ul className="nav-info">
-                <Link className="link" to="/aboutMe#aboutMe">
+                <Link className="link" to="#aboutMe">
                     <li className="tab-container"><p className="nav-tab">Sobre mi</p></li>
                 </Link>
-                <Link className="link" to="/aboutMe#projects">
+                <Link className="link" to="#projects">
                     <li className="tab-container"><p className="nav-tab">Proyectos</p></li>
                 </Link>
-                <Link className="link" to="/aboutMe#contact">
+                <Link className="link" to="#contact">
                     <li className="tab-container"><p className="nav-tab">Contacto</p></li>
                 </Link>
             </ul>

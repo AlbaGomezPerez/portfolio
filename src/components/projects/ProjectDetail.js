@@ -4,7 +4,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import '../../styles/projectDetail.css';
-import {Row, Col, Typography } from 'antd';
+import {Row, Col, Typography, Tooltip} from 'antd';
 import { getReadme } from '../../services/readmeProjects';
 import PropTypes from "prop-types";
 
@@ -32,7 +32,7 @@ const ProjectDetail = (props) => {
                     <Row className="details-image">
                         <div className="image-project-container">
                             <div className="header-project">
-                            <Link to={`/aboutMe#project${projectId}`}>
+                            <Link to={`/#project${projectId}`}>
                                 <div className="backContainer">
                                     <p className="backText">
                                         <i className="material-icons">keyboard_backspace</i>
@@ -68,8 +68,10 @@ const ProjectDetail = (props) => {
                                         <div className="profile">
                                             <p className="goal-title">Herramientas</p>
                                             <div className="topics-container">
-                                            {project.topics.map((topic, index) => (
-                                                <div className={`topics ${topic}`} key={index}></div>
+                                            {project.topics.map((topic) => (
+                                                <Tooltip title={topic}>
+                                                    <div className={`topics ${topic}`} alt={topic} key={topic}></div>
+                                                </Tooltip>
                                             ))}
                                             </div>
                                         </div>
