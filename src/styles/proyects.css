@@ -173,15 +173,21 @@ img{
 
 @media all and (max-width: 1024px) {
     .proyect-image {
-        height: 250px;
+        /*height: auto;*/
+        width: auto !important;
     }
 
     .individual-card {
-        height: 80%;
+        height: 70%;
         width: 70%;
+    }
+    [data-aos="proyect--animation4"].aos-animate, [data-aos="proyect--animation6"].aos-animate {
+        left: 2% !important;
+        opacity: 1;
     }
 
 }
+
 
 
 

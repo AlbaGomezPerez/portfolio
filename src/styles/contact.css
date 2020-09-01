@@ -113,6 +113,8 @@
         width: 100%;
         border-left: 0px solid #996d75;
         border-top: 1px solid #996d75;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -122,6 +124,9 @@
 
 @media all and (max-width: 768px) {
     .attributes__container {
+        width: 100%;
+    }
+    .contact__container {
         width: 100%;
     }
 }
