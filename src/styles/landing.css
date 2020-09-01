@@ -60,7 +60,6 @@
 }
 
 .arrow {
-    z-index: 100;
     cursor: pointer;
     position: absolute;
     top: 70%;
