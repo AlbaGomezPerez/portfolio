@@ -86,9 +86,13 @@
     opacity: 1;
 }
 
-@media all and (max-width: 700px) {
+
+
+/* XS SCREEN  */
+@media all and (max-width: 360px) {
     .curriculum-button {
         font-size: 16px;
+        width: 40vw;
     }
 }
 

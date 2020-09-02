@@ -49,3 +49,18 @@
     }
 }
 
+
+/* XS SCREEN  */
+@media all and (max-width: 360px) {
+    .skills-description {
+        display: flex;
+        text-align: center;
+    }
+    .percentage__section {
+        width: 100%;
+    }
+    .ant-progress {
+        width: 100%;
+    }
+}
+

@@ -57,3 +57,15 @@ nav ul a:hover {
     }
 }
 
+
+/* XS SCREEN  */
+@media all and (max-width: 360px) {
+    .nav-wrapper {
+        width: 100vw;
+    }
+    .link {
+        width: 50%;
+    }
+
+}
+

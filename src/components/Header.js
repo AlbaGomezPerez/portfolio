@@ -10,22 +10,6 @@ const Header = () => {
         duration: 100000,
     });
 
-  // return (
-  //       <nav className="nav-wrapper" data-aos="nav-animation">
-  //         <ul className="hide-on-med-and-down nav-info">
-  //             <Link className="CardLink" to={'/aboutMe'}>
-  //
-  //                 <li><p className="nav-tab">Sobre mi</p></li>
-  //             </Link>
-  //             <Link className="CardLink" to={'/proyects'}>
-  //                 <li><p className="nav-tab">Proyectos</p></li>
-  //             </Link>
-  //             <Link className="CardLink" to={'/contact'}>
-  //                 <li><p className="nav-tab">Contacto</p></li>
-  //             </Link>
-  //         </ul>
-  //       </nav>
-  // );
     return (
           <nav className="nav-wrapper" data-aos="nav-animation">
             <ul className="nav-info">

@@ -139,12 +139,7 @@
     .landing-name {
         font-size: 30px;
     }
-    .landing-text {
-        width: 60%;
-        height: 12%;
-        top: 12%;
-        z-index: 50;
-    }
+
     .landing-subtext {
         font-size: 18px;
     }
@@ -154,10 +149,7 @@
         opacity: 1;
         z-index: 50;
     }
-    .arrow {
-      top: 30%;
-      z-index: 50;
-    }
+
     .wave {
         bottom: 6%;
         /*opacity: 0.2;*/
@@ -172,16 +164,122 @@
 }
 
 @media all and (max-width: 700px) {
+    /*.wave {*/
+    /*    bottom: 18%;*/
+    /*    !*opacity: 0.2;*!*/
+    /*    height: 500px;*/
+    /*    z-index: 20;*/
+    /*}*/
+    /*.wave2 {*/
+    /*    bottom: 20%;*/
+    /*    z-index: 20;*/
+    /*}*/
+}
+
+
+
+/* XS SCREEN 823*/
+/*@media all and (min-width: 650px) {*/
+/*    .nav-wrapper {*/
+/*        width: 100vw;*/
+/*    }*/
+/*    #myVideo {*/
+/*        !*height: 70vh;*!*/
+/*        !*width: 100vw;*!*/
+/*        !*border: 5px solid black;*!*/
+/*    }*/
+/*    .wave {*/
+/*        bottom: 30%;*/
+/*        height: 50vh;*/
+/*        z-index: 20;*/
+/*    }*/
+/*    .wave2 {*/
+/*        bottom: 6%;*/
+/*        z-index: 20;*/
+/*    }*/
+/*    .landing-text {*/
+/*        height: 9%;*/
+/*        top: 14%;*/
+/*        z-index: 50;*/
+/*    }*/
+/*    .landing-name {*/
+/*        font-size: 20px;*/
+/*    }*/
+/*    .landing-subtext {*/
+/*        font-size: 10px;*/
+/*    }*/
+/*    .landing-logo {*/
+/*        height: 25px;*/
+/*        width: 25px;*/
+/*        opacity: 1;*/
+/*        z-index: 50;*/
+/*    }*/
+/*}*/
+
+/* XS SCREEN  */
+@media all and (max-width: 360px) {
     .wave {
-        bottom: 18%;
-        /*opacity: 0.2;*/
-        height: 500px;
+        bottom: 34%;
+        height: 20vh;
         z-index: 20;
     }
     .wave2 {
-        bottom: 20%;
+        bottom: 34%;
+        height: 20vh;
         z-index: 20;
     }
-}
+    .landing-text {
+        height: 9%;
+        top: 14%;
+        z-index: 50;
+    }
+    .landing-name {
+        font-size: 20px;
+    }
+    .landing-subtext {
+        font-size: 10px;
+    }
+    .landing-logo {
+        height: 25px;
+        width: 25px;
+        opacity: 1;
+        z-index: 50;
+    }
+    .landing-video {
+        width: 100%;
+        height: 60vh;
+    }
+    #myVideo {
+        height: 100%;
+        object-fit: fill;
+    }
+    .arrow {
+        font-size: 60px !important;
+        top: 40%;
+    }
+    .landing-text {
+        width: 60%;
+        height: 12%;
+        top: 20%;
+        z-index: 50;
+    }
 
+
+
+
+    .profile-image {
+        width: 80vw;
+        height: 100%;
+    }
+
+    .profile-image-container {
+        height: 70%;
+    }
+
+    #aboutMe {
+        height: 1%;
+    }
+
+
+}
 
