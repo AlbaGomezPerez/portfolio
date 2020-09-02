@@ -34,27 +34,33 @@ const Experience = () => {
                             <Timeline mode="alternate" className="timeline">
                                 <Timeline.Item >
                                     <span className="experience-item" data-aos="experience-animation">Formación Angular</span>
-                                    <p className="dates experience-item" data-aos="experience-animation">Abril 2020. Udemy</p>
+                                    <p className="dates experience-item" data-aos="experience-animation">Mayo - Junio 2020.
+                                        <br></br> Udemy</p>
                                 </Timeline.Item>
                                 <Timeline.Item>
                                     <span className="experience-item" data-aos="experience-animation-left">Formación React</span>
-                                    <p className="dates experience-item" data-aos="experience-animation-left">Marzo 2020. Udemy</p>
+                                    <p className="dates experience-item" data-aos="experience-animation-left">Marzo - Abril 2020.
+                                        <br></br> Udemy</p>
                                 </Timeline.Item>
                                 <Timeline.Item>
                                     <span className="experience-item" data-aos="experience-animation">Desarrollador Front-End</span>
-                                    <p className="dates experience-item" data-aos="experience-animation">Enero 2020. Rentger</p>
+                                    <p className="dates experience-item" data-aos="experience-animation">Enero - Febrero 2020.
+                                        <br></br> Rentger</p>
                                 </Timeline.Item>
                                 <Timeline.Item>
                                     <span className="experience-item" data-aos="experience-animation-left">Bootcamp desarrollo Front-End</span>
-                                    <p className="dates experience-item" data-aos="experience-animation-left">Octubre 2019. Adalab Digital</p>
+                                    <p className="dates experience-item" data-aos="experience-animation-left">Junio - Diciembre 2019.
+                                        <br></br> Adalab Digital</p>
                                 </Timeline.Item>
                                 <Timeline.Item>
                                     <span className="experience-item" data-aos="experience-animation">Director creativo</span>
-                                    <p className="dates experience-item" data-aos="experience-animation">Junio 2019. Complementos de moda</p>
+                                    <p className="dates experience-item" data-aos="experience-animation">Diciembre 2016 - Junio 2019.
+                                        <br></br> Complementos de moda</p>
                                 </Timeline.Item>
                                 <Timeline.Item>
                                     <span className="experience-item" data-aos="experience-animation-left">Grado en Diseño de Moda</span>
-                                    <p className="dates experience-item" data-aos="experience-animation-left">Junio 2015. Escuela Superior de Diseño</p>
+                                    <p className="dates experience-item" data-aos="experience-animation-left">Septiembre 2010 - Junio 2015.
+                                        <br></br> Escuela Superior de Diseño</p>
                                 </Timeline.Item>
                             </Timeline>
                         </div>
