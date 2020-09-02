@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.dc4633dd.chunk.css",
-    "main.js": "/portfolio/static/js/main.578d1a64.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.578d1a64.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.c98bea15.chunk.css",
+    "main.js": "/portfolio/static/js/main.fddbea88.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.fddbea88.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.dcb3ef65.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.dcb3ef65.js.map",
     "static/css/2.b08c9e0c.chunk.css": "/portfolio/static/css/2.b08c9e0c.chunk.css",
-    "static/js/2.a67ae758.chunk.js": "/portfolio/static/js/2.a67ae758.chunk.js",
-    "static/js/2.a67ae758.chunk.js.map": "/portfolio/static/js/2.a67ae758.chunk.js.map",
+    "static/js/2.cdb4f296.chunk.js": "/portfolio/static/js/2.cdb4f296.chunk.js",
+    "static/js/2.cdb4f296.chunk.js.map": "/portfolio/static/js/2.cdb4f296.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.de2b5c33529ec6d168bc605d9ac2cdaa.js": "/portfolio/precache-manifest.de2b5c33529ec6d168bc605d9ac2cdaa.js",
+    "precache-manifest.8d8da8b4bb9040501f4145437e810c65.js": "/portfolio/precache-manifest.8d8da8b4bb9040501f4145437e810c65.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.b08c9e0c.chunk.css.map": "/portfolio/static/css/2.b08c9e0c.chunk.css.map",
-    "static/css/main.dc4633dd.chunk.css.map": "/portfolio/static/css/main.dc4633dd.chunk.css.map",
+    "static/css/main.c98bea15.chunk.css.map": "/portfolio/static/css/main.c98bea15.chunk.css.map",
     "static/media/Computer.mp4": "/portfolio/static/media/Computer.4c5a8349.mp4",
     "static/media/alba.jpg": "/portfolio/static/media/alba.ed418d7c.jpg",
-    "static/media/proyects.css": "/portfolio/static/media/typescript.4e96f111.png",
-    "static/media/contact.css": "/portfolio/static/media/twitter.4f19c98b.png"
+    "static/media/proyects.css": "/portfolio/static/media/react.5a0770ef.png",
+    "static/media/landing.css": "/portfolio/static/media/twitter.4f19c98b.png",
+    "static/media/contact.css": "/portfolio/static/media/gmail.10993a91.png"
   }
 }

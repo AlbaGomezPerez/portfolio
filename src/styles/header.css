@@ -75,3 +75,10 @@ nav ul a:hover {
     }
 }
 
+/* XS SCREEN 731 */
+@media all and (max-width: 731px) {
+    .nav-wrapper {
+        max-width: 731px;
+    }
+}
+
