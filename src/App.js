@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import 'antd/dist/antd.css';
 import './styles/app.css';
 import Header from './components/Header';
-import Landing from './components/Landing';
+// import Landing from './components/Landing';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import {GetProjects, GetProjectImage, GetReadme} from './services/getProjects';
@@ -39,7 +39,6 @@ function App() {
     return (
       <div className="app">
         <Header />
-        <Landing/>
         <Main
             allProjects={allProjects}
             allImages={allImages}
