@@ -1,7 +1,7 @@
 
 import React, {  } from 'react';
 
-import {Card, Avatar, Row, Col, Typography, Progress} from 'antd';
+import {Card, Avatar, Row, Col, Typography, Progress, Tooltip} from 'antd';
 import '../../styles/proyects.css';
 import AOS from 'aos';
 import { Link } from 'react-router-dom';
@@ -76,7 +76,13 @@ function Projects(props) {
                             description={
                                 <div className="allTopics">
                                     {proyect.topics.map((topic, index )=> {
-                                    return <p key={index} className={`projectTopics project-${topic}`}></p>
+                                    return (
+                                        <Tooltip title={topic}>
+                                            <p key={index} alt={topic} className={`projectTopics project-${topic}`}></p>
+                                        </Tooltip>
+                                    )
+
+
                                 })}
                                 </div>
                             }
