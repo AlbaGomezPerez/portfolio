@@ -103,7 +103,9 @@ img{
 
 .project-typescript {
     background-image: url("../images/typescript.png");
-    margin-left: 2%;
+    margin-top: 1%;
+    background-size: 80%;
+
 }
 
 .project-portfolio {
