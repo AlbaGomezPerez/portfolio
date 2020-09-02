@@ -229,7 +229,7 @@ img{
 
 
 /* XS SCREEN  */
-@media all and (max-width: 360px) {
+@media all and (min-width: 360px) {
     .card-container {
         height: 90%;
         margin-top: 10%;
@@ -242,10 +242,9 @@ img{
         height: auto;
         margin-top: 5%;
     }
-
-
-
 }
+
+
 
 
 

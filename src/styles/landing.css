@@ -263,23 +263,42 @@
         top: 20%;
         z-index: 50;
     }
+}
 
-
-
-
-    .profile-image {
-        width: 80vw;
+/* XS SCREEN 640 */
+@media all and (max-width: 640px) {
+    .wave {
+        bottom: 11%;
+        height: 30vh;
+        z-index: 20;
+    }
+    .wave2 {
+        bottom: 10%;
+        height: 30vh;
+        z-index: 20;
+    }
+    .landing-video {
+        width: 100%;
+        height: 80vh;
+    }
+    #myVideo {
         height: 100%;
+        object-fit: fill;
     }
-
-    .profile-image-container {
-        height: 70%;
+    .landing-text {
+        height: 18%;
+        z-index: 50;
     }
-
-    #aboutMe {
-        height: 1%;
+    .landing-name {
+        font-size: 20px;
     }
-
-
+    .landing-subtext {
+        font-size: 14px;
+    }
+    .arrow {
+        font-size: 60px !important;
+        top: 70%;
+        z-index: 50;
+    }
 }
 

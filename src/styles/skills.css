@@ -50,8 +50,8 @@
 }
 
 
-/* XS SCREEN  */
-@media all and (max-width: 360px) {
+/* XS SCREEN 360-640 */
+@media all and (min-width: 360px) {
     .skills-description {
         display: flex;
         text-align: center;
@@ -63,4 +63,6 @@
         width: 100%;
     }
 }
+
+
 
