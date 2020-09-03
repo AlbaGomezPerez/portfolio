@@ -94,16 +94,6 @@
 }
 
 
-
-
-
-
-@media all and (max-width: 1025px) {
-    .percentage__section {
-        display: flex;
-    }
-}
-
 .material-icons {
     color: #996d75;
     font-size: 50px;
@@ -195,6 +185,36 @@
 [data-aos="image-container"].aos-animate {
     bottom: 1%;
     opacity: 1;
+}
+
+@media all and (max-width: 360px) {
+    /*.percentage__section {*/
+    /*    display: flex;*/
+    /*}*/
+    .image-project-container {
+        width: 100%;
+        margin-top: 18%;
+    }
+    .image-container {
+        height: 180px;
+    }
+    .image-project-detail {
+        object-fit: fill;
+    }
+    .ant-typography.page__title.contact-title {
+        font-size: 20px;
+        margin-top: 4%;
+    }
+    .aboutProject__section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .logo-container {
+        width: 100%;
+        margin: auto;
+    }
 }
 
 

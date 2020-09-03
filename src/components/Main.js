@@ -21,12 +21,14 @@ function Main (props) {
               exact
               path="/project/:id"
               render={routerProps => (
+                  <div style={{ overflow: 'hidden' }}>
                   <ProjectDetail
                       Match={routerProps.match}
                       allProjects={allProjects}
                       allImages={allImages}
                       allReadmes={allReadmes}
                   />
+                  </div>
               )}
           />
         <Route

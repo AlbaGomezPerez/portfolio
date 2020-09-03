@@ -72,7 +72,7 @@
     #aboutMe {
         height: 100px;
     }
-    .page__title {
+    .aboutMe-title {
         position: relative;
         z-index: 80;
     }

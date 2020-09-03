@@ -12,7 +12,7 @@ const AboutMeDescription = () => {
         <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 10 }}>
             <Row>
             <div className="page__description__container">
-                <Title className="page__title" level={2}>Sobre mi</Title>
+                <Title className="page__title aboutMe-title" level={2}>Sobre mi</Title>
                 <span className="introduction-me">Mi nombre es Alba y soy desarrolladora Front-End</span>
                 <p className="description__list">
                     Estudié Diseño de Moda en Madrid. Desarrollé mi parte creativa y artística llegando
