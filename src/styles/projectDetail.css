@@ -202,12 +202,18 @@
 }
 
 @media all and (max-width: 640px) {
+    .image-container {
+        height: 220px !important;
+    }
+}
+
+@media all and (max-width: 731px) {
     .image-project-container {
         width: 100%;
         margin-top: 18%;
     }
     .image-container {
-        height: 220px;
+        height: 250px;
     }
     .image-project-detail {
         object-fit: fill;
