@@ -46,7 +46,7 @@ nav ul a:hover {
 }
 
 
-@media all and (max-width: 736px) {
+@media all and (max-width: 812px) {
     .nav-tab {
         font-size: 16px;
         margin-top: 4%;

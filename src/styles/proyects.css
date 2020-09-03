@@ -137,7 +137,7 @@ img{
     margin-right: 45%;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 812px) {
     .card-0, .card-2, .card-4, .card-6 {
         margin: auto;
         margin-bottom: 4%;
@@ -146,7 +146,7 @@ img{
 
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 812px) {
     .card-0, .card-2, .card-4, .card-6 {
         margin: auto;
         margin-bottom: 4%;
@@ -155,7 +155,7 @@ img{
 
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 812px) {
     .card-1, .card-3, .card-5 {
         margin: auto;
         margin-bottom: 4%;
@@ -209,7 +209,7 @@ img{
     }
 }
 
-@media all and (max-width: 736px) {
+@media all and (max-width: 812px) {
     .card-container {
         margin: auto;
         margin-top: 50px;
