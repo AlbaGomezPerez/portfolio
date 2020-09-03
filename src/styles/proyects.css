@@ -194,6 +194,18 @@ img{
 }
 
 @media all and (max-width: 360px) {
+    .individual-card {
+        height: 100%;
+        width: auto;
+    }
+
+    .projectTopics {
+        height: 60px;
+        width: 60%;
+    }
+}
+
+@media all and (max-width: 640px) {
     .card-container {
         margin: auto;
         margin-top: 50px;
@@ -208,13 +220,19 @@ img{
     }
 
     .individual-card {
-        height: 100%;
+        height: auto;
         width: auto;
     }
 
     .projectTopics {
-        height: 60px;
+        height: 30px;
         width: 60%;
+    }
+    .project-typescript {
+        width: 40%;
+    }
+    .project-materialize {
+        width: 40%;
     }
 }
 

@@ -188,15 +188,19 @@
 }
 
 @media all and (max-width: 360px) {
-    /*.percentage__section {*/
-    /*    display: flex;*/
-    /*}*/
+    .image-container {
+        height: 130px !important;
+    }
+
+}
+
+@media all and (max-width: 640px) {
     .image-project-container {
         width: 100%;
         margin-top: 18%;
     }
     .image-container {
-        height: 180px;
+        height: 220px;
     }
     .image-project-detail {
         object-fit: fill;
