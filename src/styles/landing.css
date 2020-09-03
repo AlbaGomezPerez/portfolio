@@ -150,6 +150,24 @@
     }
 }
 
+@media all and (min-width: 361px) and (max-width: 568px) {
+    .landing-text {
+        width: 50%;
+        height: 30%;
+        top: 30%;
+        z-index: 50;
+    }
+}
+
+@media all and (min-width: 569px) and (max-width: 731px) {
+    .landing-text {
+        width: 50%;
+        height: 20%;
+        top: 30%;
+        z-index: 50;
+    }
+}
+
 
 @media all and (max-width: 731px) {
     .wave {
@@ -170,12 +188,7 @@
         height: 100%;
         object-fit: fill;
     }
-    .landing-text {
-        width: 50%;
-        height: 20%;
-        top: 30%;
-        z-index: 50;
-    }
+
     .landing-name {
         font-size: 30px;
     }
