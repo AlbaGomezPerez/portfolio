@@ -205,6 +205,7 @@ img{
     }
 }
 
+
 @media all and (max-width: 640px) {
     .card-container {
         margin: auto;

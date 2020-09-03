@@ -93,3 +93,10 @@
         width: 50%;
     }
 }
+
+@media all and (max-width: 411px) {
+    .curriculum-button {
+        font-size: 16px;
+        width: 50%;
+    }
+}
