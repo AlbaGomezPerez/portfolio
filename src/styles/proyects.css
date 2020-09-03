@@ -240,6 +240,34 @@ img{
     }
 }
 
+@media all and (min-width: 1024px) {
+    .card-container {
+        margin: auto;
+        margin-top: 50px;
+        height: 300px;
+        width: 100%;
+    }
+    .proyect-image {
+        width: auto;
+        height: auto;
+        margin-top: 4%;
+    }
+    .projectTopics {
+        height: 25px;
+        width: 60%;
+    }
+    .project-typescript {
+        height: 20px;
+        width: 30%;
+    }
+    .project-materialize {
+        height: 20px;
+    }
+    .ant-card-meta-title {
+        margin: 0 !important;
+    }
+}
+
 
 
 

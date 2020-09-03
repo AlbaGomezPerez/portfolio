@@ -70,3 +70,18 @@ nav ul a:hover {
         z-index: 100;
     }
 }
+
+@media all and (min-width: 1024px) {
+    .nav-tab {
+        font-size: 26px;
+        margin-top: 4%;
+    }
+    .link {
+        width: 40%;
+    }
+    .nav-wrapper {
+        z-index: 100;
+    }
+}
+
+

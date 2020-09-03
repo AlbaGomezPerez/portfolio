@@ -301,6 +301,38 @@
     }
 }
 
+@media all and (min-width: 1024px) {
+    .landing-video {
+        width: 100%;
+        height: 90vh;
+    }
+    #myVideo {
+        height: 100%;
+        object-fit: fill;
+    }
+    .wave {
+        bottom: 8%;
+        z-index: 20;
+        height: 20%;
+    }
+    .wave2 {
+        bottom: 6%;
+        z-index: 20;
+        height: 40%;
+    }
+
+    .landing-logo {
+        height: 50px;
+        width: 50px;
+        opacity: 1;
+        z-index: 50;
+    }
+    .arrow {
+        top: 70%;
+        z-index: 50;
+    }
+}
+
 
 
 

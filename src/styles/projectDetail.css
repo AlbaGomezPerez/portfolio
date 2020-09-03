@@ -242,6 +242,60 @@
     }
 }
 
+@media all and (min-width: 1024px) {
+    .image-project-container {
+        width: 100%;
+        margin-top: 18%;
+    }
+    .image-container {
+        height: 340px;
+    }
+    .image-project-detail {
+        object-fit: fill;
+    }
+    .ant-typography.page__title.contact-title {
+        font-size: 20px;
+        margin-top: 4%;
+    }
+    .aboutProject__section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .logo-container {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media all and (min-width: 1366px) {
+    .image-project-container {
+        width: 100%;
+        margin-top: 18%;
+    }
+    .image-container {
+        height: 300px;
+    }
+    .image-project-detail {
+        object-fit: fill;
+    }
+    .ant-typography.page__title.contact-title {
+        font-size: 20px;
+        margin-top: 4%;
+    }
+    .aboutProject__section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .logo-container {
+        width: 100%;
+        margin: auto;
+    }
+}
+
 
 
 
