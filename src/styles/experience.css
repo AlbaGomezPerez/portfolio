@@ -86,9 +86,10 @@
     opacity: 1;
 }
 
-@media all and (max-width: 700px) {
+
+@media all and (max-width: 360px) {
     .curriculum-button {
         font-size: 16px;
+        width: 50%;
     }
 }
-

@@ -68,10 +68,15 @@
     opacity: 1;
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 360px) {
+    #aboutMe {
+        height: 100px;
+    }
     .page__title {
         position: relative;
         z-index: 80;
     }
+    .profile-image-container {
+        height: 300px;
+    }
 }
-

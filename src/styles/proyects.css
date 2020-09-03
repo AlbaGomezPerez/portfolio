@@ -139,13 +139,6 @@ img{
         margin-bottom: 4%;
         width: 70%;
     }
-    .proyect-image {
-        height: 200px;
-    }
-
-    .individual-card {
-        height: 72%;
-    }
 
 }
 
@@ -154,13 +147,6 @@ img{
         margin: auto;
         margin-bottom: 4%;
         width: 70%;
-    }
-    .proyect-image {
-        height: 200px;
-    }
-
-    .individual-card {
-        height: 72%;
     }
 
 }
@@ -173,25 +159,6 @@ img{
     }
 }
 
-@media all and (max-width: 1024px) {
-    .proyect-image {
-        /*height: auto;*/
-        width: auto !important;
-    }
-
-    .individual-card {
-        height: 70%;
-        width: 70%;
-    }
-    [data-aos="proyect--animation4"].aos-animate, [data-aos="proyect--animation6"].aos-animate {
-        left: 2% !important;
-        opacity: 1;
-    }
-
-}
-
-
-
 
 [data-aos="proyect--animation0"], [data-aos="proyect--animation2"], [data-aos="proyect--animation4"], [data-aos="proyect--animation6"] {
     left: -50%;
@@ -200,7 +167,7 @@ img{
 }
 
 [data-aos="proyect--animation0"].aos-animate, [data-aos="proyect--animation2"].aos-animate, [data-aos="proyect--animation4"].aos-animate, [data-aos="proyect--animation6"].aos-animate {
-    left: 1%;
+    left: 0;
     opacity: 1;
 }
 
@@ -211,7 +178,7 @@ img{
 }
 
 [data-aos="proyect--animation4"].aos-animate, [data-aos="proyect--animation6"].aos-animate {
-    left: -18%;
+    left: 0;
     opacity: 1;
 }
 
@@ -222,39 +189,38 @@ img{
 }
 
 [data-aos="proyect--animation1"].aos-animate, [data-aos="proyect--animation3"].aos-animate, [data-aos="proyect--animation5"].aos-animate {
-    right: -1%;
+    right: 0;
     opacity: 1;
+}
+
+@media all and (max-width: 360px) {
+    .card-container {
+        margin: auto;
+        margin-top: 50px;
+        height: 250px;
+        width: 90%;
+    }
+
+    .proyect-image {
+        /*height: auto;*/
+        width: auto;
+        height: auto;
+        margin-top: 4%;
+    }
+
+    .individual-card {
+        height: 100%;
+        width: auto;
+    }
+
+    .projectTopics {
+        height: 60px;
+        width: 60%;
+    }
 }
 
 
 
-
-/*
-PROYECTOS
-    Estilos a cada tarjeta
-*/
-
-/*
-DETALLES
-*/
-
-/*
-CONTACTO
-    Mail raro en pantalla pequeña
-*/
-
-/*
-ABOUT ME
-
-*/
-
-/*
-OTRAS
-    Añadir video. Algún tipo de entradilla. Titulo, logo con mi nombre
-    titulos de seccion animacion desorganizada
-    Una unaica pagina, sin router
-    Error terminal refs
-*/
 
 
 

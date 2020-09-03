@@ -135,18 +135,36 @@
     background-image: url("../images/linkedin-original.png");
 }
 
-@media all and (max-width: 1370px) {
+
+@media all and (max-width: 360px) {
+    .wave {
+        bottom: -10%;
+        height: 40%;
+        z-index: 20;
+    }
+    .wave2 {
+        bottom: 10%;
+        z-index: 20;
+    }
+    .landing-video {
+        width: 100%;
+        height: 90vh;
+    }
+    #myVideo {
+        height: 100%;
+        object-fit: fill;
+    }
+    .landing-text {
+        width: 70%;
+        height: 12%;
+        top: 30%;
+        z-index: 50;
+    }
     .landing-name {
         font-size: 30px;
     }
-    .landing-text {
-        width: 60%;
-        height: 12%;
-        top: 12%;
-        z-index: 50;
-    }
     .landing-subtext {
-        font-size: 18px;
+        font-size: 16px;
     }
     .landing-logo {
         height: 50px;
@@ -155,32 +173,8 @@
         z-index: 50;
     }
     .arrow {
-      top: 30%;
-      z-index: 50;
-    }
-    .wave {
-        bottom: 6%;
-        /*opacity: 0.2;*/
-        height: 500px;
-        z-index: 20;
-    }
-    .wave2 {
-        bottom: 10%;
-        height: 500px;
-        z-index: 20;
-    }
-}
-
-@media all and (max-width: 700px) {
-    .wave {
-        bottom: 18%;
-        /*opacity: 0.2;*/
-        height: 500px;
-        z-index: 20;
-    }
-    .wave2 {
-        bottom: 20%;
-        z-index: 20;
+        top: 70%;
+        z-index: 50;
     }
 }
 
