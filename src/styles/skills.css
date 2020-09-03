@@ -38,8 +38,7 @@
 }
 
 
-
-@media all and (max-width: 360px) {
+@media all and (max-width: 411px) {
     .percentage__section {
         flex-direction: column;
         justify-content: center;

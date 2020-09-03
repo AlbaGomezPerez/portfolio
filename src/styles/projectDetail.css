@@ -194,6 +194,13 @@
 
 }
 
+@media all and (max-width: 411px) {
+
+    .image-container {
+        height: 160px !important;
+    }
+}
+
 @media all and (max-width: 640px) {
     .image-project-container {
         width: 100%;
