@@ -150,7 +150,21 @@
     }
 }
 
-@media all and (min-width: 361px) and (max-width: 568px) {
+@media all and (min-width: 361px) and (max-width: 375px) {
+    .wave {
+        bottom: 10%;
+        height: 20%;
+        z-index: 20;
+    }
+    .landing-text {
+        width: 70%;
+        height: 12%;
+        top: 30%;
+        z-index: 50;
+    }
+}
+
+@media all and (min-width: 376px) and (max-width: 568px) {
     .landing-text {
         width: 50%;
         height: 30%;
@@ -188,10 +202,28 @@
         height: 40%;
         z-index: 20;
     }
+    .wave2 {
+        bottom: 16%;
+        z-index: 20;
+        height: 40%;
+    }
+}
+
+@media all and (min-width: 737px) and (max-width: 812px) {
+    .landing-text {
+        width: 50%;
+        height: 30%;
+        top: 30%;
+        z-index: 50;
+    }
+    .wave {
+        height: 50%;
+        bottom: -10%;
+    }
 }
 
 
-@media all and (max-width: 736px) {
+@media all and (max-width: 812px) {
     .landing-video {
         width: 100%;
         height: 90vh;
@@ -202,7 +234,7 @@
     }
 
     .wave2 {
-        bottom: 16%;
+        bottom: 12%;
         z-index: 20;
         height: 40%;
     }
@@ -224,5 +256,7 @@
         z-index: 50;
     }
 }
+
+
 
 

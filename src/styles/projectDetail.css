@@ -211,15 +211,14 @@
     }
 }
 
-@media all and (min-width: 640px) and (max-width: 736px) {
+@media all and (min-width: 640px) and (max-width: 812px) {
     .image-container {
         height: 250px;
     }
 }
 
 
-
-@media all and (max-width: 736px) {
+@media all and (max-width: 812px) {
     .image-project-container {
         width: 100%;
         margin-top: 18%;
