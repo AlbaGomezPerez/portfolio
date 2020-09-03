@@ -1,19 +1,10 @@
 import React from 'react';
 import { Typography, Col, Row, Progress } from 'antd';
-import AOS from 'aos';
 import '../../styles/aboutMeDescription.css';
 import alba from '../../images/alba.jpg';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-
-
 
 const AboutMeDescription = () => {
   const { Title } = Typography;
-    AOS.init({
-        duration: 3000,
-        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-        mirror: true,
-    });
 
   return (
     <div className="description__container">

@@ -1,16 +1,25 @@
 import React, { useState, useEffect } from "react";
 import 'antd/dist/antd.css';
 import './styles/app.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 import Header from './components/Header';
 // import Landing from './components/Landing';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import {GetProjects, GetProjectImage, GetReadme} from './services/getProjects';
 
+
 function App() {
     const [allProjects, setAllProyects] = useState([]);
     const [allImages, setAllImages] = useState([]);
     const [allReadmes, setAllReadmes] = useState([]);
+
+    AOS.init({
+        duration: 3000,
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        mirror: true,
+    });
 
     const getProjectsData = async () => {
         const projectsInfo = await GetProjects();

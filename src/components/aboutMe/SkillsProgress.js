@@ -1,15 +1,8 @@
 import React from 'react';
 import { Progress } from 'antd';
 import '../../styles/skills.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 const Results = () => {
-  AOS.init({
-    duration: 3000,
-    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-    mirror: true,
-  });
 
   return (
     <div className="results__container">
