@@ -66,10 +66,10 @@ function Projects(props) {
 
                             description={
                                 <div className="allTopics">
-                                    {proyect.topics.map((topic, index )=> {
+                                    {proyect.topics.map(topic => {
                                     return (
-                                        <Tooltip title={topic}>
-                                            <p key={index} alt={topic} className={`projectTopics project-${topic}`}></p>
+                                        <Tooltip title={topic} key={topic}>
+                                            <p alt={topic} className={`projectTopics project-${topic}`}></p>
                                         </Tooltip>
                                     )
 
