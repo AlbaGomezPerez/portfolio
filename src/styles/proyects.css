@@ -209,9 +209,7 @@ img{
     }
 }
 
-
-
-@media all and (max-width: 731px) {
+@media all and (max-width: 736px) {
     .card-container {
         margin: auto;
         margin-top: 50px;
