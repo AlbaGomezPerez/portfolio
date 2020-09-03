@@ -150,7 +150,8 @@
     }
 }
 
-@media all and (max-width: 640px) {
+
+@media all and (max-width: 731px) {
     .wave {
         bottom: 8%;
         height: 40%;
