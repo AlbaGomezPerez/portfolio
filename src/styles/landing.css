@@ -148,6 +148,9 @@
         top: 30%;
         z-index: 50;
     }
+    .landing-name {
+        font-size: 30px;
+    }
 }
 
 @media all and (min-width: 361px) and (max-width: 375px) {
@@ -162,6 +165,9 @@
         top: 30%;
         z-index: 50;
     }
+    .landing-name {
+        font-size: 30px;
+    }
 }
 
 @media all and (min-width: 376px) and (max-width: 568px) {
@@ -170,6 +176,12 @@
         height: 30%;
         top: 30%;
         z-index: 50;
+    }
+    .landing-name {
+        font-size: 30px;
+    }
+    .landing-subtext {
+        font-size: 16px;
     }
 }
 
@@ -190,6 +202,12 @@
         z-index: 20;
         height: 40%;
     }
+    .landing-name {
+        font-size: 30px;
+    }
+    .landing-subtext {
+        font-size: 16px;
+    }
 }
 
 @media all and (min-width: 732px) and (max-width: 736px) {
@@ -207,9 +225,36 @@
         z-index: 20;
         height: 40%;
     }
+    .landing-name {
+        font-size: 30px;
+    }
+    .landing-subtext {
+        font-size: 16px;
+    }
 }
 
-@media all and (min-width: 737px) and (max-width: 812px) {
+@media all and (min-width: 737px) and (max-width: 768px) {
+    .landing-text {
+        width: 50%;
+        height: 20%;
+        top: 30%;
+        z-index: 50;
+    }
+
+    .landing-name {
+        font-size: 60px;
+    }
+
+    .wave {
+        height: 50%;
+        bottom: -10%;
+    }
+    .landing-subtext {
+        font-size: 24px;
+    }
+}
+
+@media all and (min-width: 769px) and (max-width: 812px) {
     .landing-text {
         width: 50%;
         height: 30%;
@@ -220,8 +265,13 @@
         height: 50%;
         bottom: -10%;
     }
+    .landing-name {
+        font-size: 60px;
+    }
+    .landing-subtext {
+        font-size: 16px;
+    }
 }
-
 
 @media all and (max-width: 812px) {
     .landing-video {
@@ -239,12 +289,6 @@
         height: 40%;
     }
 
-    .landing-name {
-        font-size: 30px;
-    }
-    .landing-subtext {
-        font-size: 16px;
-    }
     .landing-logo {
         height: 50px;
         width: 50px;
