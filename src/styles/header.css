@@ -45,8 +45,20 @@ nav ul a:hover {
     background-color: rgb(128, 112, 115) !important;
 }
 
+@media all and (max-width: 768px) {
+    .nav-tab {
+        font-size: 26px;
+        margin-top: 4%;
+    }
+    .link {
+        width: 40%;
+    }
+    .nav-wrapper {
+        z-index: 100;
+    }
+}
 
-@media all and (max-width: 812px) {
+@media all and (min-width: 769px) and (max-width: 812px) {
     .nav-tab {
         font-size: 16px;
         margin-top: 4%;
