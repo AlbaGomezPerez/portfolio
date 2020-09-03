@@ -142,9 +142,24 @@
         height: 40%;
         z-index: 20;
     }
-    .wave2 {
-        bottom: 10%;
+    .landing-text {
+        width: 70%;
+        height: 12%;
+        top: 30%;
+        z-index: 50;
+    }
+}
+
+@media all and (max-width: 640px) {
+    .wave {
+        bottom: 8%;
+        height: 40%;
         z-index: 20;
+    }
+    .wave2 {
+        bottom: 16%;
+        z-index: 20;
+        height: 40%;
     }
     .landing-video {
         width: 100%;
@@ -155,8 +170,8 @@
         object-fit: fill;
     }
     .landing-text {
-        width: 70%;
-        height: 12%;
+        width: 50%;
+        height: 20%;
         top: 30%;
         z-index: 50;
     }
