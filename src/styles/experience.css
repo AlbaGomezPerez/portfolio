@@ -100,3 +100,8 @@
         width: 50%;
     }
 }
+@media all and (max-width: 568px) {
+    .curriculum-button {
+        width: 50%;
+    }
+}

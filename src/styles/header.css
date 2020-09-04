@@ -44,8 +44,29 @@ nav ul a:hover {
 [data-aos="nav-animation"].aos-animate {
     background-color: rgb(128, 112, 115) !important;
 }
+@media all and (max-width: 320px) {
+    .nav-tab {
+        font-size: 18px;
+        margin-top: 4%;
+    }
+    .link {
+        width: 40%;
+    }
+}
+@media all and (min-width: 321px) and (max-width: 375px) {
+    .nav-tab {
+        font-size: 20px;
+        margin-top: 4%;
+    }
+    .link {
+        width: 40%;
+    }
+    .nav-wrapper {
+        z-index: 100;
+    }
+}
 
-@media all and (max-width: 768px) {
+@media all and (min-width: 376px) and (max-width: 768px) {
     .nav-tab {
         font-size: 26px;
         margin-top: 4%;
@@ -71,12 +92,25 @@ nav ul a:hover {
     }
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 813px) and (max-width: 823px) {
+    .nav-tab {
+        font-size: 16px;
+        margin-top: 4%;
+    }
+    .link {
+        width: 40%;
+    }
+    .nav-wrapper {
+        z-index: 100;
+    }
+}
+
+@media all and (min-width: 824px) and (max-width: 1366px) {
     .nav-tab {
         font-size: 26px;
     }
     .link {
-        width: 40%;
+        width: 50%;
     }
     .nav-wrapper {
         z-index: 100;

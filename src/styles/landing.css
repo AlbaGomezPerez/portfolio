@@ -135,8 +135,50 @@
     background-image: url("../images/linkedin-original.png");
 }
 
+@media all and (max-width: 320px) {
+    .wave {
+        bottom: 5%;
+        height: 20%;
+        z-index: 20;
+    }
+    .wave2  {
+        bottom: -2%;
+        height: 30%;
+        z-index: 20;
+    }
+    .landing-text {
+        width: 70%;
+        height: 12%;
+        top: 30%;
+        z-index: 50;
+    }
+    .landing-name {
+        font-size: 22px;
+    }
+    .landing-subtext {
+        font-size: 16px;
+        top: 40px;
+    }
+    .landing-video {
+        width: 100%;
+        height: 90vh;
+    }
+    #myVideo {
+        height: 100%;
+        object-fit: fill;
+    }
+    .arrow {
+        z-index: 50;
+    }
+    .landing-logo {
+        height: 50px;
+        width: 50px;
+        opacity: 1;
+        z-index: 50;
+    }
+}
 
-@media all and (max-width: 360px) {
+@media all and (min-width: 321px) and (max-width: 359px) {
     .wave {
         bottom: -10%;
         height: 40%;
@@ -151,11 +193,89 @@
     .landing-name {
         font-size: 30px;
     }
+    .landing-subtext {
+        font-size: 18px;
+        top: 46px;
+    }
 }
+
+@media all and (min-width: 360px) and (max-width: 361px) {
+    .wave {
+        bottom: -10%;
+        height: 40%;
+        z-index: 20;
+    }
+    .wave2 {
+        bottom: 10%;
+        height: 40%;
+        z-index: 20;
+    }
+    .landing-text {
+        width: 70%;
+        height: 12%;
+        top: 30%;
+        z-index: 50;
+    }
+    .landing-name {
+        font-size: 30px;
+    }
+    .landing-subtext {
+        font-size: 18px;
+        top: 46px;
+    }
+    .landing-logo {
+        height: 50px;
+        width: 50px;
+    }
+    .landing-video {
+        width: 100%;
+        height: 90vh;
+    }
+    #myVideo {
+        height: 100%;
+        object-fit: fill;
+    }
+    .arrow {
+        z-index: 50;
+    }
+}
+
 
 @media all and (min-width: 361px) and (max-width: 375px) {
     .wave {
-        bottom: 10%;
+        bottom: 4%;
+        height: 18%;
+        z-index: 20;
+    }
+    .landing-text {
+        width: 70%;
+        height: 12%;
+        top: 20%;
+        z-index: 50;
+    }
+    .landing-name {
+        font-size: 30px;
+    }
+    .landing-subtext {
+        top: 50px;
+    }
+    .landing-video {
+        width: 100%;
+        height: 90vh;
+    }
+    #myVideo {
+        height: 100%;
+        object-fit: fill;
+    }
+    .landing-logo {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media all and (min-width: 376px) and (max-width: 414px) {
+    .wave {
+        bottom: 2%;
         height: 20%;
         z-index: 20;
     }
@@ -168,9 +288,17 @@
     .landing-name {
         font-size: 30px;
     }
+    .landing-video {
+        width: 100%;
+        height: 90vh;
+    }
+    #myVideo {
+        height: 100%;
+        object-fit: fill;
+    }
 }
 
-@media all and (min-width: 376px) and (max-width: 568px) {
+@media all and (min-width: 415px) and (max-width: 568px) {
     .landing-text {
         width: 50%;
         height: 30%;
@@ -183,22 +311,129 @@
     .landing-subtext {
         font-size: 16px;
     }
+    .wave {
+        bottom: -10%;
+        z-index: 20;
+        height: 50%;
+    }
+    .arrow {
+        z-index: 50;
+        top: 76%;
+    }
+    .landing-logo {
+        height: 50px;
+        width: 50px;
+    }
 }
 
-@media all and (min-width: 569px) and (max-width: 731px) {
+@media all and (min-width: 569px) and (max-width: 640px) {
+    .wave {
+        bottom: 1%;
+        height: 30%;
+        z-index: 20;
+    }
     .landing-text {
         width: 50%;
         height: 20%;
         top: 30%;
         z-index: 50;
+        padding-bottom: 4px;
     }
+    .landing-name {
+        font-size: 22px;
+    }
+    .landing-subtext {
+        font-size: 16px;
+        top: 46px;
+    }
+}
+
+@media all and (min-width: 639px) and (max-width: 640px) {
     .wave {
-        bottom: 8%;
+        bottom: -2%;
+        height: 30%;
+        z-index: 20;
+    }
+    .wave2 {
+        bottom: 2%;
+        height: 50%;
+        z-index: 20;
+    }
+    .landing-text {
+        width: 70%;
+        height: 18%;
+        top: 30%;
+        z-index: 50;
+    }
+    .landing-name {
+        font-size: 30px;
+    }
+    .landing-subtext {
+        font-size: 18px;
+        top: 38px;
+    }
+    .landing-logo {
+        height: 50px;
+        width: 50px;
+    }
+    .landing-video {
+        width: 100%;
+        height: 90vh;
+    }
+    #myVideo {
+        height: 100%;
+        object-fit: fill;
+    }
+    .arrow {
+        z-index: 50;
+    }
+}
+
+@media all and (min-width: 641px) and (max-width: 667px) {
+    .wave {
+        bottom: -15%;
         height: 40%;
         z-index: 20;
     }
     .wave2 {
-        bottom: 16%;
+        bottom: -4%;
+        height: 40%;
+        z-index: 20;
+    }
+    .landing-logo {
+        z-index: 50;
+        height: 50px;
+        width: 50px;
+    }
+    .arrow {
+        z-index: 50;
+    }
+    .landing-text {
+        top: 30%;
+        height: 21%;
+    }
+    .landing-name {
+        font-size: 30px;
+    }
+    .landing-subtext {
+        top: 50px;
+    }
+}
+
+@media all and (min-width: 668px) and (max-width: 731px) {
+    .landing-text {
+        width: 30%;
+        height: 20%;
+        top: 30%;
+        z-index: 50;
+    }
+    .wave {
+        bottom: -12%;
+        height: 40%;
+        z-index: 20;
+    }
+    .wave2 {
+        bottom: 2%;
         z-index: 20;
         height: 40%;
     }
@@ -207,6 +442,13 @@
     }
     .landing-subtext {
         font-size: 16px;
+    }
+    .landing-logo {
+        height: 50px;
+        width: 50px;
+    }
+    .arrow {
+        z-index: 50;
     }
 }
 
@@ -216,12 +458,12 @@
         height: 21%;
     }
     .wave {
-        bottom: 2%;
+        bottom: -8%;
         height: 40%;
         z-index: 20;
     }
     .wave2 {
-        bottom: 16%;
+        bottom: 6%;
         z-index: 20;
         height: 40%;
     }
@@ -231,49 +473,78 @@
     .landing-subtext {
         font-size: 16px;
     }
+    .landing-logo {
+        z-index: 50;
+    }
+    .arrow {
+        z-index: 50;
+    }
 }
 
 @media all and (min-width: 737px) and (max-width: 768px) {
     .landing-text {
         width: 50%;
-        height: 20%;
-        top: 30%;
+        height: 14%;
+        top: 10%;
         z-index: 50;
     }
 
     .landing-name {
         font-size: 60px;
     }
-
     .wave {
         height: 50%;
-        bottom: -10%;
+        bottom: 20%;
+    }
+    .wave2 {
+        height: 50%;
+        bottom: 20%;
     }
     .landing-subtext {
         font-size: 24px;
+    }
+    .landing-logo {
+        height: 60px;
+        width: 60px;
+    }
+    .arrow {
+        z-index: 50;
+        top: 36%;
     }
 }
 
 @media all and (min-width: 769px) and (max-width: 812px) {
     .landing-text {
         width: 50%;
-        height: 30%;
+        height: 20%;
         top: 30%;
         z-index: 50;
     }
     .wave {
+        height: 70%;
+        bottom: -30%;
+    }
+    .wave2 {
         height: 50%;
-        bottom: -10%;
+        bottom: -20%;
     }
     .landing-name {
-        font-size: 60px;
+        font-size: 40px;
     }
     .landing-subtext {
         font-size: 16px;
     }
+    .arrow {
+        z-index: 50;
+        top: 70%;
+    }
+    .landing-logo {
+        height: 60px;
+        width: 60px;
+    }
 }
 
-@media all and (max-width: 812px) {
+@media all and (min-width: 813px) and (max-width: 815px) {
     .landing-video {
         width: 100%;
         height: 90vh;
@@ -281,6 +552,11 @@
     #myVideo {
         height: 100%;
         object-fit: fill;
+    }
+    .wave {
+        bottom: 8%;
+        z-index: 20;
+        height: 20%;
     }
 
     .wave2 {
@@ -300,8 +576,33 @@
         z-index: 50;
     }
 }
+@media all and (min-width: 816px) and (max-width: 823px) {
+    .wave {
+        bottom: -24%;
+        z-index: 20;
+        height: 40%;
+    }
+    .wave2 {
+        bottom: -10%;
+        z-index: 20;
+        height: 40%;
+    }
+    .landing-text {
+        height: 20%;
+    }
+    .landing-logo {
+        height: 50px;
+        width: 50px;
+    }
+    .landing-name {
+        font-size: 30px;
+    }
+    .landing-subtext {
+        top: 50px;
+    }
+}
 
-@media all and (max-width: 1024px) {
+@media all and (min-width: 824px) and (max-width: 1024px) {
     .landing-video {
         width: 100%;
         height: 90vh;
@@ -309,11 +610,6 @@
     #myVideo {
         height: 100%;
         object-fit: fill;
-    }
-    .wave {
-        bottom: 8%;
-        z-index: 20;
-        height: 20%;
     }
     .wave2 {
         bottom: 6%;
@@ -354,14 +650,21 @@
     }
 
     .landing-logo {
-        height: 50px;
-        width: 50px;
+        height: 90px;
+        width: 90px;
         opacity: 1;
         z-index: 50;
     }
     .arrow {
         top: 70%;
         z-index: 50;
+    }
+    .landing-name {
+        font-size: 70px;
+    }
+    .landing-subtext {
+        font-size: 30px;
+        top: 60%;
     }
 }
 

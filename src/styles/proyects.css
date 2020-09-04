@@ -209,6 +209,8 @@ img{
     }
 }
 
+
+
 @media all and (max-width: 812px) {
     .card-container {
         margin: auto;
@@ -237,6 +239,10 @@ img{
     }
     .project-materialize {
         width: 40%;
+    }
+    [data-aos="proyect--animation4"].aos-animate, [data-aos="proyect--animation6"].aos-animate {
+        left: 0;
+        opacity: 1;
     }
 }
 
