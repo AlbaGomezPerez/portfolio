@@ -69,8 +69,8 @@ const ProjectDetail = (props) => {
                                             <p className="goal-title">Herramientas</p>
                                             <div className="topics-container">
                                             {project.topics.map((topic) => (
-                                                <Tooltip title={topic}>
-                                                    <div className={`topics ${topic}`} alt={topic} key={topic}></div>
+                                                <Tooltip title={topic} key={topic}>
+                                                    <div className={`topics ${topic}`} alt={topic}></div>
                                                 </Tooltip>
                                             ))}
                                             </div>

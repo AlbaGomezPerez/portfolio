@@ -3,9 +3,7 @@ import React, {  } from 'react';
 
 import {Card, Avatar, Row, Col, Typography, Progress, Tooltip} from 'antd';
 import '../../styles/proyects.css';
-import AOS from 'aos';
 import { Link } from 'react-router-dom';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
 import PropTypes from 'prop-types';
 import alba from '../../images/alba.jpg';
 import { getReadme } from '../../services/readmeProjects';
@@ -14,13 +12,6 @@ function Projects(props) {
     const { Meta } = Card;
     const { Title } = Typography;
     const { allProjects, allImages, allReadmes } = props;
-
-    AOS.init({
-        duration: 1200,
-        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-        mirror: true,
-    });
-
 
 
     return (
@@ -75,10 +66,10 @@ function Projects(props) {
 
                             description={
                                 <div className="allTopics">
-                                    {proyect.topics.map((topic, index )=> {
+                                    {proyect.topics.map(topic => {
                                     return (
-                                        <Tooltip title={topic}>
-                                            <p key={index} alt={topic} className={`projectTopics project-${topic}`}></p>
+                                        <Tooltip title={topic} key={topic}>
+                                            <p alt={topic} className={`projectTopics project-${topic}`}></p>
                                         </Tooltip>
                                     )
 

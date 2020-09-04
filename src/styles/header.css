@@ -45,40 +45,42 @@ nav ul a:hover {
     background-color: rgb(128, 112, 115) !important;
 }
 
-@media all and (max-width: 1370px) {
+@media all and (max-width: 768px) {
     .nav-tab {
-        font-size: 16px;
+        font-size: 26px;
+        margin-top: 4%;
     }
     .link {
-        width: 20%;
+        width: 40%;
     }
     .nav-wrapper {
         z-index: 100;
     }
 }
 
-
-/* XS SCREEN  */
-@media all and (max-width: 360px) {
-    .nav-wrapper {
-        width: 100vw;
+@media all and (min-width: 769px) and (max-width: 812px) {
+    .nav-tab {
+        font-size: 16px;
+        margin-top: 4%;
     }
     .link {
-        width: 50%;
+        width: 40%;
+    }
+    .nav-wrapper {
+        z-index: 100;
     }
 }
 
-/* XS SCREEN 640 */
-@media all and (max-width: 640px) {
+@media all and (min-width: 1024px) {
+    .nav-tab {
+        font-size: 26px;
+    }
+    .link {
+        width: 40%;
+    }
     .nav-wrapper {
-        max-width: 640px;
+        z-index: 100;
     }
 }
 
-/* XS SCREEN 731 */
-@media all and (max-width: 731px) {
-    .nav-wrapper {
-        max-width: 731px;
-    }
-}
 

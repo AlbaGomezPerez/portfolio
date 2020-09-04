@@ -170,7 +170,7 @@
 }
 
 /* XS SCREEN  */
-@media all and (min-width: 360px) {
+@media all and (min-width: 360px) and (max-width: 1366px) {
     .contact-description {
         display: flex;
         text-align: center;

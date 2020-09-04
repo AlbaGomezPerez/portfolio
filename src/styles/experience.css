@@ -87,12 +87,16 @@
 }
 
 
-
-/* XS SCREEN  */
 @media all and (max-width: 360px) {
     .curriculum-button {
         font-size: 16px;
-        width: 40vw;
+        width: 50%;
     }
 }
 
+@media all and (max-width: 414px) {
+    .curriculum-button {
+        font-size: 16px;
+        width: 50%;
+    }
+}

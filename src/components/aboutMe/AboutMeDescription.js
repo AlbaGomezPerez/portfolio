@@ -1,19 +1,10 @@
 import React from 'react';
 import { Typography, Col, Row, Progress } from 'antd';
-import AOS from 'aos';
 import '../../styles/aboutMeDescription.css';
 import alba from '../../images/alba.jpg';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-
-
 
 const AboutMeDescription = () => {
   const { Title } = Typography;
-    AOS.init({
-        duration: 3000,
-        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-        mirror: true,
-    });
 
   return (
     <div className="description__container">
@@ -21,7 +12,7 @@ const AboutMeDescription = () => {
         <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 10 }}>
             <Row>
             <div className="page__description__container">
-                <Title className="page__title title-aboutMe" level={2}>Sobre mi</Title>
+                <Title className="page__title aboutMe-title" level={2}>Sobre mi</Title>
                 <span className="introduction-me">Mi nombre es Alba y soy desarrolladora Front-End</span>
                 <p className="description__list">
                     Estudié Diseño de Moda en Madrid. Desarrollé mi parte creativa y artística llegando

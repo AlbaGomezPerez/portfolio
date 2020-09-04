@@ -37,32 +37,15 @@
     opacity: 1;
 }
 
-@media all and (max-width: 1100px) {
+
+@media all and (max-width: 411px) {
     .percentage__section {
         flex-direction: column;
         justify-content: center;
     }
     .percentage__circle {
-        width: 25%;
+        width: 100%;
         display: flex;
         justify-content: center;
     }
 }
-
-
-/* XS SCREEN 360-640 */
-@media all and (min-width: 360px) {
-    .skills-description {
-        display: flex;
-        text-align: center;
-    }
-    .percentage__section {
-        width: 100%;
-    }
-    .ant-progress {
-        width: 100%;
-    }
-}
-
-
-

@@ -7,6 +7,7 @@ import ProjectDetail from './projects/ProjectDetail';
 
 
 import AboutMe from './aboutMe/AboutMe';
+import Landing from './Landing';
 
 
 function Main (props) {
@@ -20,24 +21,29 @@ function Main (props) {
               exact
               path="/project/:id"
               render={routerProps => (
+                  <div style={{ overflow: 'hidden' }}>
                   <ProjectDetail
                       Match={routerProps.match}
                       allProjects={allProjects}
                       allImages={allImages}
                       allReadmes={allReadmes}
                   />
+                  </div>
               )}
           />
         <Route
             path="/"
             render={routerProps => (
-                <div>
-                  <AboutMe
-                      allProjects={allProjects}
-                      allImages={allImages}
-                      allReadmes={allReadmes}
-                  />
-                </div>
+                <React.Fragment>
+                    <Landing/>
+                        <div style={{ overflow: 'hidden' }}>
+                          <AboutMe
+                              allProjects={allProjects}
+                              allImages={allImages}
+                              allReadmes={allReadmes}
+                          />
+                        </div>
+                </React.Fragment>
             )}
         />
 

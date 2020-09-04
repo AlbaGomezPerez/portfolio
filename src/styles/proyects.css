@@ -121,7 +121,11 @@ img{
 }
 
 .proyect-image:hover {
-    opacity: 50% !important;
+    opacity: 50%;
+}
+
+.ant-progress-outer {
+    margin: 10%;
 }
 
 
@@ -133,65 +137,31 @@ img{
     margin-right: 45%;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 812px) {
     .card-0, .card-2, .card-4, .card-6 {
         margin: auto;
         margin-bottom: 4%;
         width: 70%;
     }
-    .proyect-image {
-        height: 200px;
-    }
-
-    .individual-card {
-        height: 72%;
-    }
 
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 812px) {
     .card-0, .card-2, .card-4, .card-6 {
         margin: auto;
         margin-bottom: 4%;
         width: 70%;
     }
-    .proyect-image {
-        height: 200px;
-    }
-
-    .individual-card {
-        height: 72%;
-    }
-
 
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 812px) {
     .card-1, .card-3, .card-5 {
         margin: auto;
         margin-bottom: 4%;
         width: 70%;
     }
 }
-
-@media all and (max-width: 1024px) {
-    .proyect-image {
-        /*height: auto;*/
-        width: auto !important;
-    }
-
-    .individual-card {
-        height: 70%;
-        width: 70%;
-    }
-    [data-aos="proyect--animation4"].aos-animate, [data-aos="proyect--animation6"].aos-animate {
-        left: 2% !important;
-        opacity: 1;
-    }
-
-}
-
-
 
 
 [data-aos="proyect--animation0"], [data-aos="proyect--animation2"], [data-aos="proyect--animation4"], [data-aos="proyect--animation6"] {
@@ -201,7 +171,7 @@ img{
 }
 
 [data-aos="proyect--animation0"].aos-animate, [data-aos="proyect--animation2"].aos-animate, [data-aos="proyect--animation4"].aos-animate, [data-aos="proyect--animation6"].aos-animate {
-    left: 1%;
+    left: 0;
     opacity: 1;
 }
 
@@ -223,26 +193,113 @@ img{
 }
 
 [data-aos="proyect--animation1"].aos-animate, [data-aos="proyect--animation3"].aos-animate, [data-aos="proyect--animation5"].aos-animate {
-    right: -1%;
+    right: 0;
     opacity: 1;
 }
 
-
-/* XS SCREEN  */
-@media all and (min-width: 360px) {
-    .card-container {
-        height: 90%;
-        margin-top: 10%;
-    }
+@media all and (max-width: 360px) {
     .individual-card {
-        width: 100%;
         height: 100%;
+        width: auto;
     }
-    .proyect-image {
-        height: auto;
-        margin-top: 5%;
+
+    .projectTopics {
+        height: 60px;
+        width: 60%;
     }
 }
+
+@media all and (max-width: 812px) {
+    .card-container {
+        margin: auto;
+        margin-top: 50px;
+        height: 250px;
+        width: 90%;
+    }
+
+    .proyect-image {
+        width: auto;
+        height: auto;
+        margin-top: 4%;
+    }
+
+    .individual-card {
+        height: auto;
+        width: auto;
+    }
+
+    .projectTopics {
+        height: 30px;
+        width: 60%;
+    }
+    .project-typescript {
+        width: 40%;
+    }
+    .project-materialize {
+        width: 40%;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .card-container {
+        margin: auto;
+        margin-top: 50px;
+        height: 300px;
+        width: 100%;
+    }
+    .proyect-image {
+        width: auto;
+        height: auto;
+        margin-top: 4%;
+    }
+    .projectTopics {
+        height: 25px;
+        width: 60%;
+    }
+    .project-typescript {
+        height: 20px;
+        width: 30%;
+    }
+    .project-materialize {
+        height: 20px;
+    }
+    .ant-card-meta-title {
+        margin: 0 !important;
+    }
+}
+
+@media all and (min-width: 1025px) and (max-width: 1366px) {
+    .card-container {
+        margin: auto;
+        margin-top: 50px;
+        height: 350px;
+        width: 100%;
+    }
+    .proyect-image {
+        width: auto;
+        height: auto;
+        /*margin-top: 4%;*/
+    }
+
+    .individual-card {
+    }
+
+    .projectTopics {
+        height: 25px;
+        width: 60%;
+    }
+    .project-typescript {
+        height: 20px;
+        width: 30%;
+    }
+    .project-materialize {
+        height: 20px;
+    }
+    .ant-card-meta-title {
+        margin: 0 !important;
+    }
+}
+
 
 
 

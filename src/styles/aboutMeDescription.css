@@ -1,5 +1,5 @@
 #aboutMe{
-    height: 200px;
+    height: 10%;
     color: white;
 }
 
@@ -68,41 +68,15 @@
     opacity: 1;
 }
 
-@media all and (max-width: 700px) {
-    .page__title {
+@media all and (max-width: 360px) {
+    #aboutMe {
+        height: 100px;
+    }
+    .aboutMe-title {
         position: relative;
         z-index: 80;
     }
-}
-
-
-/* XS SCREEN  */
-@media all and (min-width: 360px) {
-    .profile-image {
-        width: 80vw;
-        height: 100%;
-    }
     .profile-image-container {
-        height: 70%;
-    }
-    #aboutMe {
-        height: 1%;
-    }
-    .introduction-me {
-        display: flex;
-        text-align: center;
-    }
-    .description__list {
-        display: flex;
-        text-align: center;
-    }
-    .phrase {
-        display: flex;
-        text-align: center;
-    }
-    .phrase2 {
-        display: flex;
-        text-align: center;
+        height: 300px;
     }
 }
-

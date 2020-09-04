@@ -60,11 +60,6 @@
     display: flex;
 }
 
-@media all and (max-width: 1025px) {
-    .details-image {
-        display: block;
-    }
-}
 
 
 .goal {
@@ -93,16 +88,6 @@
     word-wrap: break-word;
 }
 
-
-
-
-
-
-@media all and (max-width: 1025px) {
-    .percentage__section {
-        display: flex;
-    }
-}
 
 .material-icons {
     color: #996d75;
@@ -195,6 +180,117 @@
 [data-aos="image-container"].aos-animate {
     bottom: 1%;
     opacity: 1;
+}
+
+@media all and (max-width: 320px) {
+    .image-container {
+        height: 100px ;
+    }
+}
+
+@media all and (min-width: 321px) and (max-width: 360px) {
+    .image-container {
+        height: 130px;
+    }
+}
+
+@media all and (min-width: 361px) and (max-width: 411px) {
+    .image-container {
+        height: 160px;
+    }
+}
+
+@media all and (min-width: 411px) and (max-width: 640px) {
+    .image-container {
+        height: 220px;
+    }
+}
+
+@media all and (min-width: 640px) and (max-width: 812px) {
+    .image-container {
+        height: 250px;
+    }
+}
+
+
+@media all and (max-width: 812px) {
+    .image-project-container {
+        width: 100%;
+        margin-top: 18%;
+    }
+    .image-project-detail {
+        object-fit: fill;
+    }
+    .ant-typography.page__title.contact-title {
+        font-size: 20px;
+        margin-top: 4%;
+    }
+    .aboutProject__section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .logo-container {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .image-project-container {
+        width: 100%;
+        margin-top: 18%;
+    }
+    .image-container {
+        height: 340px;
+    }
+    .image-project-detail {
+        object-fit: fill;
+    }
+    .ant-typography.page__title.contact-title {
+        font-size: 20px;
+        margin-top: 4%;
+    }
+    .aboutProject__section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .logo-container {
+        width: 100%;
+        margin: auto;
+    }
+    .details-image {
+        display: block;
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1366px) {
+    .image-project-container {
+        width: 100%;
+    }
+    .image-container {
+        height: 300px;
+    }
+    .image-project-detail {
+        object-fit: fill;
+    }
+    .ant-typography.page__title.contact-title {
+        font-size: 20px;
+        margin-top: 4%;
+    }
+    .aboutProject__section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .logo-container {
+        width: 100%;
+        margin: auto;
+    }
 }
 
 
