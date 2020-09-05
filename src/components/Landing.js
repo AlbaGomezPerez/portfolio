@@ -48,7 +48,7 @@ const Landing = () => {
                 mask="url(#mask)"
                 fill="white"
                 className="wave"
-                options={{ points: 4, speed: 0.2, amplitude: 60 }}>
+                options={{ points: 4, speed: 0.2, amplitude: 42 }}>
                 <defs>
                     <linearGradient id="gradient" gradientTransform="rotate(90)">
                         <stop offset="10%" stopColor="white" />
@@ -60,7 +60,7 @@ const Landing = () => {
                 mask="url(#mask)"
                 fill="white"
                 className="wave2"
-                options={{ points: 4, speed: 0.2, amplitude: 80 }}>
+                options={{ points: 4, speed: 0.2, amplitude: 40 }}>
                 <defs>
                     <linearGradient id="gradient" gradientTransform="rotate(90)">
                         <stop offset="10%" stopColor="red" />

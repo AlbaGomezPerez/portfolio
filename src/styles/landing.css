@@ -243,9 +243,13 @@
 
 @media all and (min-width: 361px) and (max-width: 375px) {
     .wave {
-        bottom: 4%;
-        height: 18%;
+        bottom: -8%;
+        height: 28%;
         z-index: 20;
+    }
+    .wave2 {
+        bottom: -2%;
+        height: 30%;
     }
     .landing-text {
         width: 70%;
@@ -257,7 +261,11 @@
         font-size: 30px;
     }
     .landing-subtext {
-        top: 50px;
+        top: 42px;
+        display: block;
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
     }
     .landing-video {
         width: 100%;
@@ -270,6 +278,9 @@
     .landing-logo {
         height: 50px;
         width: 50px;
+    }
+    .arrow {
+        z-index: 50;
     }
 }
 
