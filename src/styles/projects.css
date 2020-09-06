@@ -91,13 +91,15 @@ img{
 
 .project-materialize {
     background-image: url("../images/materialize.png");
-    margin-top: 2%;
+    margin-top: 6px;
+    margin-right: 5px;
 }
 
 .project-typescript {
     background-image: url("../images/typescript.png");
-    margin-top: 1%;
-    background-size: 80%;
+    margin-top: 3px;
+    margin-left: 2px;
+    background-size: 89%;
 }
 
 .project-portfolio {

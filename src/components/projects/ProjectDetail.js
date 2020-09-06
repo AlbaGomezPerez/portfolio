@@ -26,58 +26,58 @@ const ProjectDetail = (props) => {
         return (
             <div className="projectDetail">
                 <Col className="details" sm={{span: 24}} md={{span: 6, offset: 4}} lg={{span: 24}}>
-                    <Row className="detailsImage">
-                        <div className="imageProjectContainer">
-                            <div className="headerProject">
-                            <Link to={`/#project${projectId}`}>
-                                <div className="backContainer">
-                                    <p className="backText">
-                                        <i className="material-icons">keyboard_backspace</i>
-                                    </p>
-                                </div>
-                            </Link>
-                            <Title className="page__title detailTitle" level={2}>
-                                {getReadme(project.name, allReadmes)}
-                            </Title>
+                    <Row className="details-image">
+                        <div className="image-project-container">
+                            <div className="header-project">
+                                <Link to={`/#project${projectId}`}>
+                                    <div className="backContainer">
+                                        <p className="backText">
+                                            <i className="material-icons">keyboard_backspace</i>
+                                        </p>
+                                    </div>
+                                </Link>
+                                <Title className="page__title contact-title" level={2}>
+                                    {getReadme(project.name, allReadmes)}
+                                </Title>
                             </div>
-                            <div className="imageContainer" data-aos="imageContainer">
+                            <div className="image-container" data-aos="image-container">
                                 <img
-                                    className="imageProjectDetail"
-                                    alt="project"
+                                    className="image-project-detail"
+                                    alt="example"
                                     src={allImages.find(image => image.includes(project.name))}
                                 />
                             </div>
                         </div>
-                        <div className="projectsDetails">
-                            <div className="aboutProjectSection">
-                                <Col>
+                        <div className="projects-details">
+                            <div className="aboutProject__section">
+                                <Col className="colf">
                                     <div className="logo">
-                                        <div className="logoContainer goal icons__circle"></div>
+                                        <div className="logo-container goal icons__circle"></div>
                                         <div className="profile">
-                                            <p className="goalTitle">El reto </p>
-                                            <p className="profileText">{project.description}</p>
+                                            <p className="goal-title">El reto </p>
+                                            <p className="profile-text">{project.description}</p>
                                         </div>
                                     </div>
                                 </Col>
-                                <Col>
+                                <Col className="cols">
                                     <div className="logo">
-                                        <div className="logoContainer web icons__circle"></div>
+                                        <div className="logo-container web icons__circle"></div>
                                         <div className="profile">
-                                            <p className="goalTitle">Herramientas</p>
-                                            <div className="topicsContainer">
-                                            {project.topics.map((topic) => (
-                                                <Tooltip title={topic} key={topic}>
-                                                    <div className={`topics ${topic}`} alt={topic}></div>
-                                                </Tooltip>
-                                            ))}
+                                            <p className="goal-title">Herramientas</p>
+                                            <div className="topics-container">
+                                                {project.topics.map((topic) => (
+                                                    <Tooltip title={topic} key={topic}>
+                                                        <div className={`topics ${topic}`} alt={topic}></div>
+                                                    </Tooltip>
+                                                ))}
                                             </div>
                                         </div>
                                     </div>
                                     <div className="logo">
-                                        <div className="logoContainer tools icons__circle"></div>
+                                        <div className="logo-container tools icons__circle"></div>
                                         <div className="profile">
                                             <a href={project.homepage} target="_blank" rel="noopener noreferrer">
-                                                <p className="goalTitle">Visita la web</p>
+                                                <p className="goal-title">Visita la web</p>
                                             </a>
                                         </div>
                                     </div>
