@@ -2,6 +2,7 @@
     position: fixed;
     z-index: 1;
     justify-content: space-between;
+    background-color: rgb(128, 112, 115) !important;
 }
 
 .nav-info {
@@ -36,14 +37,6 @@ nav ul a:hover {
     background-color: transparent;
 }
 
-[data-aos="nav-animation"] {
-    background-color: transparent !important;
-    transition-property: background-color;
-}
-
-[data-aos="nav-animation"].aos-animate {
-    background-color: rgb(128, 112, 115) !important;
-}
 @media all and (max-width: 320px) {
     .nav-tab {
         font-size: 18px;
