@@ -115,6 +115,13 @@ const Results = () => {
             percent={76}
             strokeColor="#996d75"
             strokeWidth={10} format={() => 'Positiva'} />
+        <Progress
+            className="percentage__circle"
+            type="circle"
+            data-aos="percentage-animation"
+            percent={76}
+            strokeColor="#c98673"
+            strokeWidth={10} format={() => 'Trabajo'} />
       </div>
     </div>
   );

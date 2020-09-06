@@ -27,22 +27,23 @@ function App() {
      */
     const getProjectsData = async () => {
         const projectsInfo = await GetProjects();
-        setAllProjects(projectsInfo.items);
+        if(projectsInfo) {
+            setAllProjects(projectsInfo.items);
 
+            const imagePromises = projectsInfo.items.map(project => {
+                return GetProjectImage(project.contents_url);
+            });
 
-        const imagePromises = projectsInfo.items.map(project => {
-            return GetProjectImage(project.contents_url);
-        });
+            const images = await Promise.all(imagePromises);
+            setAllImages(images.map(image => image.download_url));
 
-        const readmePromises = projectsInfo.items.map(project => {
-            return GetReadme(project.url);
-        });
+            const readmePromises = projectsInfo.items.map(project => {
+                return GetReadme(project.url);
+            });
 
-        const readmes = await Promise.all(readmePromises);
-        setAllReadmes(readmes);
-
-        const images = await Promise.all(imagePromises);
-        setAllImages(images.map(image => image.download_url));
+            const readmes = await Promise.all(readmePromises);
+            setAllReadmes(readmes);
+        }
     };
 
 
