@@ -2,7 +2,7 @@
     margin: 8%;
 }
 
-.image-container {
+.imageContainer {
     height: 50%;
     margin: 2%;
     margin-top: 6%;
@@ -15,23 +15,23 @@
     padding: 2%;
 }
 
-.header-project {
+.headerProject {
     display: flex;
     justify-content: space-between;
     padding-left: 6%;
 }
 
-.goal-title {
+.goalTitle {
     font-size: 22px;
     color: rgb(153, 143, 144);
 }
 
-.projects-details {
+.projectsDetails {
     border-left: 1px solid #996d75;
     width: 40%;
 }
 
-.image-project-container {
+.imageProjectContainer {
     width: 60%;
 }
 
@@ -42,7 +42,7 @@
     margin-top: 1%;
 }
 
-.details-image {
+.detailsImage {
     display: flex;
 }
 
@@ -66,7 +66,7 @@
 
 }
 
-.profile-text {
+.profileText {
     width: 100%;
     height: auto;
     word-wrap: break-word;
@@ -87,7 +87,7 @@
     justify-self: end;
 }
 
-.image-project-detail {
+.imageProjectDetail {
     max-width: 100%;
     height: 100%;
     background-size: cover;
@@ -95,7 +95,7 @@
     display: flex;
 }
 
-.topics-container {
+.topicsContainer {
     display: flex;
 }
 
@@ -154,25 +154,25 @@
     display: none;
 }
 
-[data-aos="image-container"] {
+[data-aos="imageContainer"] {
     bottom: -50%;
     opacity: 0;
     transition-property: bottom, opacity;
 }
 
-[data-aos="image-container"].aos-animate {
+[data-aos="imageContainer"].aos-animate {
     bottom: 1%;
     opacity: 1;
 }
 
 @media all and (max-width: 1025px) {
-    .image-project-container {
+    .imageProjectContainer {
         width: 100%;
     }
 }
 
 @media all and (max-width: 1025px) {
-    .projects-details {
+    .projectsDetails {
         width: 100%;
         border-left: 0px solid #996d75;
         border-top: 1px solid #996d75;
@@ -180,113 +180,113 @@
 }
 
 @media all and (max-width: 320px) {
-    .image-container {
+    .imageContainer {
         height: 100px ;
     }
 }
 
 @media all and (min-width: 321px) and (max-width: 360px) {
-    .image-container {
+    .imageContainer {
         height: 130px;
     }
 }
 
 @media all and (min-width: 361px) and (max-width: 411px) {
-    .image-container {
+    .imageContainer {
         height: 140px;
     }
 }
 
 @media all and (min-width: 412px) and (max-width: 640px) {
-    .image-container {
+    .imageContainer {
         height: 180px;
     }
 }
 
 @media all and (min-width: 641px) and (max-width: 812px) {
-    .image-container {
+    .imageContainer {
         height: 250px;
     }
 }
 
 @media all and (max-width: 812px) {
-    .image-project-container {
+    .imageProjectContainer {
         width: 100%;
         margin-top: 18%;
     }
-    .image-project-detail {
+    .imageProjectDetail {
         object-fit: fill;
     }
-    .ant-typography.page__title.contact-title {
+    .ant-typography.page__title.detail-title {
         font-size: 20px;
         margin-top: 4%;
     }
-    .aboutProject__section {
+    .aboutProjectSection {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
     }
-    .logo-container {
+    .logoContainer {
         width: 100%;
         margin: auto;
     }
 }
 @media all and (min-width: 813px) and  (max-width: 1024px) {
-    .image-container {
+    .imageContainer {
         height: 340px;
     }
 }
 
 @media all and (max-width: 1024px) {
-    .image-project-container {
+    .imageProjectContainer {
         width: 100%;
         margin-top: 18%;
     }
 
-    .image-project-detail {
+    .imageProjectDetail {
         object-fit: fill;
     }
-    .ant-typography.page__title.contact-title {
+    .ant-typography.page__title.detail-title {
         font-size: 20px;
         margin-top: 4%;
     }
-    .aboutProject__section {
+    .aboutProjectSection {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
     }
-    .logo-container {
+    .logoContainer {
         width: 100%;
         margin: auto;
     }
-    .details-image {
+    .detailsImage {
         display: block;
     }
 }
 
 @media all and (min-width: 1024px) and (max-width: 1366px) {
-    .image-project-container {
+    .imageProjectContainer {
         width: 100%;
     }
-    .image-container {
+    .imageContainer {
         height: 300px;
     }
-    .image-project-detail {
+    .imageProjectDetail {
         object-fit: fill;
     }
-    .ant-typography.page__title.contact-title {
+    .ant-typography.page__title.detail-title {
         font-size: 20px;
         margin-top: 4%;
     }
-    .aboutProject__section {
+    .aboutProjectSection {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
     }
-    .logo-container {
+    .logoContainer {
         width: 100%;
         margin: auto;
     }
