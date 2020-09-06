@@ -9,6 +9,11 @@ import {
 } from 'antd';
 import { getReadme } from '../../services/readmeProjects';
 
+
+/**
+ * Component which render a detail page project
+ * @param props that contains projects, images projects and readmes projects and match.
+ */
 const ProjectDetail = (props) => {
     // eslint-disable-next-line react/prop-types
     const { allProjects, Match, allImages, allReadmes } = props;

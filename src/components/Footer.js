@@ -1,6 +1,9 @@
 import React from 'react';
 import { Layout } from 'antd';
 
+/**
+ * Component which render Footer content
+ */
 const Footer = () => {
   const { Footer } = Layout;
   return (

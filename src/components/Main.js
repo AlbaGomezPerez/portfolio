@@ -6,9 +6,13 @@ import ProjectDetail from './projects/ProjectDetail';
 import AboutMe from './aboutMe/AboutMe';
 import Landing from './Landing';
 
-
+/**
+ * Component father which render Projects, AboutMe and Contact components
+ * or change to projectDetail component
+ * @param props that contains projects, images projects and readmes projects.
+ */
 function Main(props) {
-    const {allProjects, allImages, allReadmes} = props;
+    const { allProjects, allImages, allReadmes } = props;
 
     return (
         <div className="main">

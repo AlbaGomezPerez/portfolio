@@ -6,6 +6,10 @@ import {Link} from 'react-router-dom';
 import alba from '../../images/alba.jpg';
 import {getReadme} from '../../services/readmeProjects';
 
+/**
+ * Component which render a list with all projects
+ * @param props that contains projects, images projects and readmes projects.
+ */
 function Projects(props) {
     const { Meta } = Card;
     const { Title } = Typography;

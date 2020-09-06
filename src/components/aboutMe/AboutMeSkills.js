@@ -2,6 +2,9 @@ import React from 'react';
 import { Col, Row } from 'antd';
 import SkillsProgress from './SkillsProgress';
 
+/**
+ * Component which render SkillsProgress component
+ */
 const AboutMeSkills = () => {
     return (
         <div className="generalStatus__container">

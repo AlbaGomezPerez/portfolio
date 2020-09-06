@@ -4,6 +4,9 @@ import {
 } from 'antd';
 import '../../styles/experience.css';
 
+/**
+ * Component which render Experience component
+ */
 const Experience = () => {
     return (
         <div className="employeeStatus__container">

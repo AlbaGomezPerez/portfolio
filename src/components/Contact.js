@@ -6,7 +6,9 @@ import {
 } from 'antd';
 const { Footer } = Layout;
 
-
+/**
+ * Component which render Contact content
+ */
 function Contact() {
     const { Title } = Typography;
 

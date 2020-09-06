@@ -5,6 +5,9 @@ import {
 import '../../styles/aboutMeDescription.css';
 import alba from '../../images/alba.jpg';
 
+/**
+ * Component which render AboutMeDescription component
+ */
 const AboutMeDescription = () => {
     const { Title } = Typography;
 

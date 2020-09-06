@@ -6,7 +6,10 @@ import Experience from './Experience';
 import Projects from '../projects/Projects';
 import Contact from '../Contact';
 
-
+/**
+ * Component which render AboutMe components
+ * @param props that contains projects, images projects and readmes projects.
+ */
 function AboutMe(props) {
     const { allProjects, allImages, allReadmes } = props;
     return (

@@ -2,6 +2,9 @@ import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import '../styles/header.css';
 
+/**
+ * Component which render Header content
+ */
 const Header = () => {
     return (
         <nav className="nav-wrapper">

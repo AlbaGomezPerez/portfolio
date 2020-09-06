@@ -5,6 +5,9 @@ import Wave from 'react-wavify';
 import video from '../images/Computer.mp4';
 import 'aos/dist/aos.css';
 
+/**
+ * Component which render Landing content
+ */
 const Landing = () => {
     return (
         <div className="landing-video" data-aos="welcome-page">

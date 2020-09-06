@@ -8,7 +8,9 @@ import Main from './components/Main';
 import Footer from './components/Footer';
 import { GetProjects, GetProjectImage, GetReadme } from './services/getProjects';
 
-
+/**
+ * Component father which contains all others components
+ */
 function App() {
     const [allProjects, setAllProjects] = useState([]);
     const [allImages, setAllImages] = useState([]);
@@ -19,6 +21,10 @@ function App() {
         mirror: true,
     });
 
+    /**
+      * Call the API asynchronously to get all projects,
+     their images and readmes and store them in state
+     */
     const getProjectsData = async () => {
         const projectsInfo = await GetProjects();
         setAllProjects(projectsInfo.items);
@@ -39,10 +45,17 @@ function App() {
         setAllImages(images.map(image => image.download_url));
     };
 
+
+    /**
+      * Run getProjectsData at first time
+     */
     useEffect(() => {
         getProjectsData();
     }, []);
 
+    /**
+     * Render all components
+     */
     return (
       <div className="app">
         <Header />

@@ -2,6 +2,9 @@ import React from 'react';
 import { Progress } from 'antd';
 import '../../styles/skills.css';
 
+/**
+ * Component which render skills content
+ */
 const Results = () => {
   return (
     <div className="results__container">
