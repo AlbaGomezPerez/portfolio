@@ -47,7 +47,6 @@ nav ul a:hover {
 @media all and (max-width: 320px) {
     .nav-tab {
         font-size: 18px;
-        margin-top: 4%;
     }
     .link {
         width: 40%;
@@ -56,7 +55,6 @@ nav ul a:hover {
 @media all and (min-width: 321px) and (max-width: 375px) {
     .nav-tab {
         font-size: 20px;
-        margin-top: 4%;
     }
     .link {
         width: 40%;
@@ -66,7 +64,6 @@ nav ul a:hover {
 @media all and (min-width: 376px) and (max-width: 768px) {
     .nav-tab {
         font-size: 26px;
-        margin-top: 4%;
     }
     .link {
         width: 40%;
@@ -76,7 +73,6 @@ nav ul a:hover {
 @media all and (min-width: 769px) and (max-width: 812px) {
     .nav-tab {
         font-size: 16px;
-        margin-top: 4%;
     }
     .link {
         width: 40%;
@@ -86,7 +82,6 @@ nav ul a:hover {
 @media all and (min-width: 813px) and (max-width: 823px) {
     .nav-tab {
         font-size: 16px;
-        margin-top: 4%;
     }
     .link {
         width: 40%;
