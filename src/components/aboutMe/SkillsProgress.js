@@ -3,7 +3,6 @@ import { Progress } from 'antd';
 import '../../styles/skills.css';
 
 const Results = () => {
-
   return (
     <div className="results__container">
       <div className="percentage__section">

@@ -1,12 +1,13 @@
 
-import React, {  } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { HashLink as Link } from 'react-router-hash-link';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css';
 import '../../styles/projectDetail.css';
-import {Row, Col, Typography, Tooltip} from 'antd';
+import {
+    Row, Col, Typography, Tooltip
+} from 'antd';
 import { getReadme } from '../../services/readmeProjects';
-import PropTypes from "prop-types";
 
 const ProjectDetail = (props) => {
     // eslint-disable-next-line react/prop-types
@@ -14,16 +15,7 @@ const ProjectDetail = (props) => {
     // eslint-disable-next-line react/prop-types,radix
     const projectId = parseInt(Match.params.id);
     const { Title } = Typography;
-
-    AOS.init({
-        duration: 1200,
-        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-        mirror: true,
-    });
-
     const project = allProjects.find(myProject => myProject.id === projectId);
-
-
 
     if (project) {
         return (

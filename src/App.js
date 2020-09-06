@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 import 'antd/dist/antd.css';
 import './styles/app.css';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css';
 import Header from './components/Header';
-// import Landing from './components/Landing';
 import Main from './components/Main';
 import Footer from './components/Footer';
-import {GetProjects, GetProjectImage, GetReadme} from './services/getProjects';
+import { GetProjects, GetProjectImage, GetReadme } from './services/getProjects';
 
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
 
     AOS.init({
         duration: 3000,
-        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
         mirror: true,
     });
 
@@ -27,11 +25,11 @@ function App() {
 
 
         const imagePromises = projectsInfo.items.map(project => {
-            return GetProjectImage(project.contents_url); //TODO Meter imagen por defecto
+            return GetProjectImage(project.contents_url);
         });
 
         const readmePromises = projectsInfo.items.map(project => {
-            return GetReadme(project.url); //TODO Meter imagen por defecto
+            return GetReadme(project.url);
         });
 
         const readmes = await Promise.all(readmePromises);

@@ -1,18 +1,15 @@
-
-import React, {  } from 'react';
-
-import {Card, Avatar, Row, Col, Typography, Progress, Tooltip} from 'antd';
-import '../../styles/proyects.css';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import PropTypes from 'prop-types';
+import {Avatar, Card, Col, Progress, Row, Tooltip, Typography} from 'antd';
+import '../../styles/proyects.css';
+import {Link} from 'react-router-dom';
 import alba from '../../images/alba.jpg';
-import { getReadme } from '../../services/readmeProjects';
+import {getReadme} from '../../services/readmeProjects';
 
 function Projects(props) {
     const { Meta } = Card;
     const { Title } = Typography;
     const { allProjects, allImages, allReadmes } = props;
-
 
     return (
         <React.Fragment>
@@ -28,7 +25,7 @@ function Projects(props) {
             />
             <div className="employeeStatus__container" id="projects">
                 <Row>
-                    <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }} xl={{ span: 10 }}>
+                    <Col xs={{span: 24}} sm={{span: 24}} md={{span: 24}} lg={{span: 24}} xl={{span: 10}}>
                         <Row>
                             <div className="page__description__container">
                                 <Title className="page__title" level={2}>Proyectos</Title>
@@ -38,55 +35,51 @@ function Projects(props) {
                 </Row>
             </div>
             <Row className="allCards">
-            {allProjects.map((proyect, index) => {
-                return (
-                    // eslint-disable-next-line react/no-array-index-key
-                    <Col className="cards-container" id={`proyect--${index}`} key={index} xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 24 }}>
+                {allProjects.map((proyect, index) => {
+                    return (
+                        // eslint-disable-next-line react/no-array-index-key
+                        <Col className="cards-container" id={`proyect--${index}`} key={index} xs={{span: 24}}
+                             sm={{span: 24}} md={{span: 24}} lg={{span: 24}}>
                             <div className="card-container" id={`project${proyect.id}`}>
                                 <Link className="CardLink" to={"/project/" + proyect.id}>
-                        <Card
-                        className={`item individual-card card-${index}`}
-                        data-aos={`proyect--animation${index}`}
-                        cover={
-                                <img
-                                    className={`proyect-image proyect-image${index}`}
-                                    alt="example"
-                                    src={allImages.find(image => image.includes(proyect.name))}
-                                />
+                                    <Card
+                                        className={`item individual-card card-${index}`}
+                                        data-aos={`proyect--animation${index}`}
+                                        cover={
+                                            <img
+                                                className={`proyect-image proyect-image${index}`}
+                                                alt="example"
+                                                src={allImages.find(image => image.includes(proyect.name))}
+                                            />
+                                        }
+                                        actions={[]}
+                                    >
+                                        <div className="">
+                                            <Meta
+                                                className="caption"
+                                                avatar={<Avatar src={alba}/>}
+                                                title={getReadme(proyect.name, allReadmes)}
 
-                        }
-                        actions={[
-                        ]}
-                    >
-                            <div className="">
-                        <Meta
-                            className="caption"
-                            avatar={<Avatar src={alba} />}
-                            title={getReadme(proyect.name, allReadmes)}
-
-                            description={
-                                <div className="allTopics">
-                                    {proyect.topics.map(topic => {
-                                    return (
-                                        <Tooltip title={topic} key={topic}>
-                                            <p alt={topic} className={`projectTopics project-${topic}`}></p>
-                                        </Tooltip>
-                                    )
-
-
-                                })}
-                                </div>
-                            }
-                        />
-                            </div>
-
-
-                    </Card>
+                                                description={
+                                                    <div className="allTopics">
+                                                        {proyect.topics.map(topic => {
+                                                            return (
+                                                                <Tooltip title={topic} key={topic}>
+                                                                    <p alt={topic}
+                                                                       className={`projectTopics project-${topic}`}></p>
+                                                                </Tooltip>
+                                                            )
+                                                        })}
+                                                    </div>
+                                                }
+                                            />
+                                        </div>
+                                    </Card>
                                 </Link>
                             </div>
-                    </Col>
-                )
-            })}
+                        </Col>
+                    )
+                })}
             </Row>
         </React.Fragment>
     )

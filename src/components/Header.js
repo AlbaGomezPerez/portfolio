@@ -1,11 +1,10 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import '../styles/header.css';
-// import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-          <nav className="nav-wrapper">
+        <nav className="nav-wrapper">
             <ul className="nav-info">
                 <Link className="link" to="#aboutMe">
                     <li className="tab-container"><p className="nav-tab">Sobre mi</p></li>
@@ -17,7 +16,7 @@ const Header = () => {
                     <li className="tab-container"><p className="nav-tab">Contacto</p></li>
                 </Link>
             </ul>
-          </nav>
+        </nav>
     );
 };
 
