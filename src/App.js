@@ -10,7 +10,7 @@ import { GetProjects, GetProjectImage, GetReadme } from './services/getProjects'
 
 
 function App() {
-    const [allProjects, setAllProyects] = useState([]);
+    const [allProjects, setAllProjects] = useState([]);
     const [allImages, setAllImages] = useState([]);
     const [allReadmes, setAllReadmes] = useState([]);
 
@@ -21,7 +21,7 @@ function App() {
 
     const getProjectsData = async () => {
         const projectsInfo = await GetProjects();
-        setAllProyects(projectsInfo.items);
+        setAllProjects(projectsInfo.items);
 
 
         const imagePromises = projectsInfo.items.map(project => {

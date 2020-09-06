@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import AboutMeDescription from './AboutMeDescription';
 import AboutMeSkills from './AboutMeSkills';
 import Experience from './Experience';
-import Projects from '../projects/Proyects';
+import Projects from '../projects/Projects';
 import Contact from '../Contact';
 
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Avatar, Card, Col, Progress, Row, Tooltip, Typography} from 'antd';
-import '../../styles/proyects.css';
+import '../../styles/projects.css';
 import {Link} from 'react-router-dom';
 import alba from '../../images/alba.jpg';
 import {getReadme} from '../../services/readmeProjects';
@@ -35,21 +35,21 @@ function Projects(props) {
                 </Row>
             </div>
             <Row className="allCards">
-                {allProjects.map((proyect, index) => {
+                {allProjects.map((project, index) => {
                     return (
                         // eslint-disable-next-line react/no-array-index-key
-                        <Col className="cards-container" id={`proyect--${index}`} key={index} xs={{span: 24}}
+                        <Col className="cards-container" id={`project--${index}`} key={index} xs={{span: 24}}
                              sm={{span: 24}} md={{span: 24}} lg={{span: 24}}>
-                            <div className="card-container" id={`project${proyect.id}`}>
-                                <Link className="CardLink" to={"/project/" + proyect.id}>
+                            <div className="card-container" id={`project${project.id}`}>
+                                <Link className="CardLink" to={"/project/" + project.id}>
                                     <Card
                                         className={`item individual-card card-${index}`}
-                                        data-aos={`proyect--animation${index}`}
+                                        data-aos={`project--animation${index}`}
                                         cover={
                                             <img
-                                                className={`proyect-image proyect-image${index}`}
+                                                className={`project-image project-image${index}`}
                                                 alt="example"
-                                                src={allImages.find(image => image.includes(proyect.name))}
+                                                src={allImages.find(image => image.includes(project.name))}
                                             />
                                         }
                                         actions={[]}
@@ -58,11 +58,11 @@ function Projects(props) {
                                             <Meta
                                                 className="caption"
                                                 avatar={<Avatar src={alba}/>}
-                                                title={getReadme(proyect.name, allReadmes)}
+                                                title={getReadme(project.name, allReadmes)}
 
                                                 description={
                                                     <div className="allTopics">
-                                                        {proyect.topics.map(topic => {
+                                                        {project.topics.map(topic => {
                                                             return (
                                                                 <Tooltip title={topic} key={topic}>
                                                                     <p alt={topic}
