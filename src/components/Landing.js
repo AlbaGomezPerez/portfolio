@@ -8,7 +8,7 @@ import 'aos/dist/aos.css';
 const Landing = () => {
     return (
         <div className="landing-video" data-aos="welcome-page">
-            <video playsinline autoPlay muted loop id="myVideo">
+            <video playsInline autoPlay muted loop id="myVideo">
                 <source src={video} type="video/mp4"></source>
             </video>
 
