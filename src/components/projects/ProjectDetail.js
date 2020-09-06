@@ -27,7 +27,7 @@ const ProjectDetail = (props) => {
             <div className="projectDetail">
                 <Col className="details" sm={{span: 24}} md={{span: 6, offset: 4}} lg={{span: 24}}>
                     <Row className="detailsImage">
-                        <div className="image-project-container">
+                        <div className="imageProjectContainer">
                             <div className="headerProject">
                             <Link to={`/#project${projectId}`}>
                                 <div className="backContainer">
@@ -40,7 +40,7 @@ const ProjectDetail = (props) => {
                                 {getReadme(project.name, allReadmes)}
                             </Title>
                             </div>
-                            <div className="imageContainer" data-aos="image-container">
+                            <div className="imageContainer" data-aos="imageContainer">
                                 <img
                                     className="imageProjectDetail"
                                     alt="project"
@@ -51,7 +51,7 @@ const ProjectDetail = (props) => {
                         <div className="projectsDetails">
                             <div className="aboutProjectSection">
                                 <Col>
-                                    <div>
+                                    <div className="logo">
                                         <div className="logoContainer goal icons__circle"></div>
                                         <div className="profile">
                                             <p className="goalTitle">El reto </p>
@@ -60,7 +60,7 @@ const ProjectDetail = (props) => {
                                     </div>
                                 </Col>
                                 <Col>
-                                    <div>
+                                    <div className="logo">
                                         <div className="logoContainer web icons__circle"></div>
                                         <div className="profile">
                                             <p className="goalTitle">Herramientas</p>
@@ -73,7 +73,7 @@ const ProjectDetail = (props) => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div className="logo">
                                         <div className="logoContainer tools icons__circle"></div>
                                         <div className="profile">
                                             <a href={project.homepage} target="_blank" rel="noopener noreferrer">
