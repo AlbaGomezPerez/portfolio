@@ -3,14 +3,11 @@
     padding: 30px;
     background-color: #ffffff;
     margin: 0px 12%;
-    /*padding-top: 6%;*/
 }
 
-/* XS SCREEN  */
 @media all and (max-width: 360px) {
     .main {
         padding: 2%;
     }
-
 }
 

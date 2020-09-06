@@ -27,8 +27,6 @@
     opacity: 0.4;
 }
 
-
-
 .landing-text {
     background-color: #b3b3b3;
     border-radius: 10px;
@@ -48,7 +46,6 @@
 .landing-name {
     color: white;
 }
-
 
 .landing-subtext {
     color: white;
@@ -90,7 +87,6 @@
     margin: 1%;
     border-radius: 50%;
 }
-
 
 .network-image-landing {
     margin: auto;
@@ -239,7 +235,6 @@
         z-index: 50;
     }
 }
-
 
 @media all and (min-width: 361px) and (max-width: 375px) {
     .wave {
@@ -679,19 +674,11 @@
     }
 }
 
-@media all and (min-width: 361px) and (max-width: 375px) {
-
-}
-
 @media (width: 375px) and (orientation: portrait) {
     .wave2 {
-        /*background-color: pink;*/
-        /*display: none !important;*/
         bottom: 20%;
     }
     .wave {
-        /*background-color: green;*/
-        /*display: none !important;*/
         bottom: 6%;
     }
     .landing-text {

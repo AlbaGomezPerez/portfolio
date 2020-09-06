@@ -31,22 +31,8 @@
     width: 40%;
 }
 
-@media all and (max-width: 1025px) {
-    .projects-details {
-        width: 100%;
-        border-left: 0px solid #996d75;
-        border-top: 1px solid #996d75;
-    }
-}
-
 .image-project-container {
     width: 60%;
-}
-
-@media all and (max-width: 1025px) {
-    .image-project-container {
-        width: 100%;
-    }
 }
 
 .details {
@@ -59,8 +45,6 @@
 .details-image {
     display: flex;
 }
-
-
 
 .goal {
     background-image: url("../images/goal.png");
@@ -97,7 +81,6 @@
     border-radius: 80%;
     width: 8%;
 }
-
 
 .backContainer {
     justify-content: end;
@@ -182,6 +165,20 @@
     opacity: 1;
 }
 
+@media all and (max-width: 1025px) {
+    .image-project-container {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 1025px) {
+    .projects-details {
+        width: 100%;
+        border-left: 0px solid #996d75;
+        border-top: 1px solid #996d75;
+    }
+}
+
 @media all and (max-width: 320px) {
     .image-container {
         height: 100px ;
@@ -211,7 +208,6 @@
         height: 250px;
     }
 }
-
 
 @media all and (max-width: 812px) {
     .image-project-container {

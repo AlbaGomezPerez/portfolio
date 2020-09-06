@@ -29,8 +29,6 @@
     color: rgb(153, 143, 144);
 }
 
-
-
 .curriculum-button, .curriculum-button:focus {
     background-color: rgb(153, 109, 117);
     color: white;
@@ -64,6 +62,7 @@
 .experience-item {
     position: relative;
 }
+
 [data-aos="experience-animation"] {
     right: -200%;
     opacity: 0;
@@ -85,7 +84,6 @@
     left: 1%;
     opacity: 1;
 }
-
 
 @media all and (max-width: 360px) {
     .curriculum-button {
