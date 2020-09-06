@@ -1,48 +1,48 @@
 #aboutMe{
     height: 10%;
-    color: white;
 }
 
-.description__container{
+.descriptionContainer{
 	margin-bottom: 30px;
 }
-.page__description__container {
+.aboutMeDescriptionContainer {
     margin-bottom:30px;
 }
 
-.description__list {
+.descriptionText {
     font-size: 20px;
     font-style:italic;
     margin-top: 10px;
 }
-.description__line{
+.descriptionLine{
 	padding-top: 30px;
 }
 
-.profile-image-container {
+.profileImageContainer {
     height: 500px;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
-.profile-image {
+.profileImage {
     height: 100%;
     border-radius: 8%;
 }
 
-.introduction-me {
+.introductionMe {
     font-size: 22px;
     color: rgb(153, 143, 144);
 }
 
-.phrase {
+.aboutMePhrase {
     font-size: 22px;
     color: rgb(153, 143, 144);
     display: flex;
     justify-content: center;
 }
 
-.phrase2 {
+.aboutMePhrase2 {
     display: flex;
     justify-content: center;
 }
@@ -53,9 +53,6 @@
 }
 
 
-.profile-image-container {
-    position: relative;
-}
 
 [data-aos="alba-animation"] {
     right: -200%;
@@ -72,11 +69,11 @@
     #aboutMe {
         height: 100px;
     }
-    .aboutMe-title {
+    .aboutTitle{
         position: relative;
         z-index: 80;
     }
-    .profile-image-container {
+    .profileImageContainer {
         height: 300px;
     }
 }

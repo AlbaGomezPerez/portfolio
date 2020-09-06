@@ -14,7 +14,7 @@ function AboutMe(props) {
     const { allProjects, allImages, allReadmes } = props;
     return (
         <React.Fragment>
-            <div id="aboutMe">initial</div>
+            <div id="aboutMe"></div>
             <AboutMeDescription />
             <AboutMeSkills />
             <Experience />
