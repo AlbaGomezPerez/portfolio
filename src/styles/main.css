@@ -4,6 +4,7 @@
     background-color: #ffffff;
     margin: 0px 12%;
     /*padding-top: 6%;*/
+    overflow-x: hidden;
 }
 
 /* XS SCREEN  */
