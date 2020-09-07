@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 import { GetProjects, GetProjectImage, GetReadme } from './services/getProjects';
 
 /**
- * Component father which contains all others components
+ * Component father which contains all important components
  */
 function App() {
     const [allProjects, setAllProjects] = useState([]);
