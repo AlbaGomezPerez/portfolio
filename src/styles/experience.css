@@ -1,9 +1,9 @@
-.experiencie-container {
+.experienceContainer {
     display: flex;
     justify-content: center;
 }
 
-.experiencie-row {
+.experienceRow {
     display: flex;
     justify-content: center;
 }
@@ -20,18 +20,16 @@
     border-color: #8dc5be !important;
 }
 
-.experiencie-line {
+.experienceLine {
     margin-bottom: 4%;
 }
 
-.experiencie-title {
+.experienceTitle {
     font-size: 22px;
     color: rgb(153, 143, 144);
 }
 
-
-
-.curriculum-button, .curriculum-button:focus {
+.curriculumButton, .curriculumButton:focus {
     background-color: rgb(153, 109, 117);
     color: white;
     border: none;
@@ -39,18 +37,18 @@
     font-size: 20px;
 }
 
-.curriculum-button:hover {
+.curriculumButton:hover {
     background-color: rgb(235, 192, 181);
     color: white;
     border: 1px solid rgb(153, 109, 117);
 }
 
-.curriculum-space {
+.curriculumSpace {
     display: flex;
     justify-content: center;
 }
 
-.curriculum-link {
+.curriculumLink {
     width: 200%;
     display: flex;
     justify-content: center;
@@ -61,47 +59,47 @@
     color: rgb(153, 143, 144);
 }
 
-.experience-item {
+.experienceItem {
     position: relative;
 }
-[data-aos="experience-animation"] {
+
+[data-aos="experienceAnimation"] {
     right: -200%;
     opacity: 0;
     transition-property: right, opacity;
 }
 
-[data-aos="experience-animation"].aos-animate {
+[data-aos="experienceAnimation"].aos-animate {
     right: 1%;
     opacity: 1;
 }
 
-[data-aos="experience-animation-left"] {
+[data-aos="experienceAnimationLeft"] {
     left: -200%;
     opacity: 0;
     transition-property: left, opacity;
 }
 
-[data-aos="experience-animation-left"].aos-animate {
+[data-aos="experienceAnimationLeft"].aos-animate {
     left: 1%;
     opacity: 1;
 }
 
-
 @media all and (max-width: 360px) {
-    .curriculum-button {
+    .curriculumButton {
         font-size: 16px;
         width: 50%;
     }
 }
 
 @media all and (max-width: 414px) {
-    .curriculum-button {
+    .curriculumButton {
         font-size: 16px;
         width: 50%;
     }
 }
 @media all and (max-width: 568px) {
-    .curriculum-button {
+    .curriculumButton {
         width: 50%;
     }
 }

@@ -2,20 +2,17 @@ import React from 'react';
 import {HashLink as Link} from 'react-router-hash-link';
 import '../styles/landing.css';
 import Wave from 'react-wavify';
-import AOS from 'aos';
 import video from '../images/Computer.mp4';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css';
 
+/**
+ * Component which render Landing content
+ */
 const Landing = () => {
-    AOS.init({
-        duration: 3000,
-    });
-
-
     return (
         <React.Fragment>
             <div className="landing-video" data-aos="welcome-page">
-                <video autoPlay muted loop id="myVideo">
+                <video playsInline autoPlay muted loop id="myVideo">
                     <source src={video} type="video/mp4"></source>
                 </video>
 

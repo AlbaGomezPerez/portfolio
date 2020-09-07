@@ -32,8 +32,6 @@
     height: 22%;
 }
 
-
-
 .landing-text {
     background-color: #b3b3b3;
     border-radius: 10px;
@@ -53,7 +51,6 @@
 .landing-name {
     color: white;
 }
-
 
 .landing-subtext {
     color: white;
@@ -93,7 +90,6 @@
     margin: 1%;
     border-radius: 50%;
 }
-
 
 .network-image-landing {
     margin: auto;
@@ -173,7 +169,6 @@
         width: 50px;
     }
 }
-
 
 @media all and (min-width: 361px) and (max-width: 375px) {
     .landing-name {
@@ -327,6 +322,10 @@
     .landing-subtext {
         font-size: 30px;
     }
+}
+
+@media all and (min-width: 361px) and (max-width: 375px) {
+
 }
 
 @media (width: 375px) and (orientation: portrait) {

@@ -1,37 +1,41 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 import 'antd/dist/antd.css';
 import './styles/app.css';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css';
 import Header from './components/Header';
-// import Landing from './components/Landing';
 import Main from './components/Main';
 import Footer from './components/Footer';
-import {GetProjects, GetProjectImage, GetReadme} from './services/getProjects';
+import { GetProjects, GetProjectImage, GetReadme } from './services/getProjects';
 
-
+/**
+ * Component father which contains all others components
+ */
 function App() {
-    const [allProjects, setAllProyects] = useState([]);
+    const [allProjects, setAllProjects] = useState([]);
     const [allImages, setAllImages] = useState([]);
     const [allReadmes, setAllReadmes] = useState([]);
 
     AOS.init({
         duration: 3000,
-        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
         mirror: true,
     });
 
+    /**
+      * Call the API asynchronously to get all projects,
+     their images and readmes and store them in state
+     */
     const getProjectsData = async () => {
         const projectsInfo = await GetProjects();
-        setAllProyects(projectsInfo.items);
+        setAllProjects(projectsInfo.items);
 
 
         const imagePromises = projectsInfo.items.map(project => {
-            return GetProjectImage(project.contents_url); //TODO Meter imagen por defecto
+            return GetProjectImage(project.contents_url);
         });
 
         const readmePromises = projectsInfo.items.map(project => {
-            return GetReadme(project.url); //TODO Meter imagen por defecto
+            return GetReadme(project.url);
         });
 
         const readmes = await Promise.all(readmePromises);
@@ -41,10 +45,17 @@ function App() {
         setAllImages(images.map(image => image.download_url));
     };
 
+
+    /**
+      * Run getProjectsData at first time
+     */
     useEffect(() => {
         getProjectsData();
     }, []);
 
+    /**
+     * Render all components
+     */
     return (
       <div className="app">
         <Header />
