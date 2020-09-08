@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
     "@testing-library/dom": "^7.24.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.0.2",
@@ -51,5 +52,6 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
     "jest": "^26.4.2"
-  }
+  },
+  "plugins": ["transform-react-jsx"]
 }
