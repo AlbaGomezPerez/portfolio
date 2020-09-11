@@ -10,7 +10,7 @@ const Header = () => {
         <nav className="nav-wrapper">
             <ul className="nav-info">
                 <Link className="link" to="/#aboutMe">
-                    <li className="tab-container"><p className="nav-tab">Sobre mi</p></li>
+                    <li className="tab-container"><p className="nav-tab">Sobre mí</p></li>
                 </Link>
                 <Link className="link" to="/#projects">
                     <li className="tab-container"><p className="nav-tab">Proyectos</p></li>
