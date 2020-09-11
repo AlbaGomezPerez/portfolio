@@ -6,6 +6,12 @@
     overflow-x: hidden;
 }
 
+@media all and (max-width:1200px){
+    .main {
+        margin: 0 45px;
+    }
+}
+
 @media all and (max-width: 360px) {
     .main {
         padding: 2%;

@@ -82,7 +82,7 @@ function Contact() {
                     </div>
                 </Row>
             </Col>
-            <Footer id="contact-footer">hola</Footer>
+            <Footer id="contact-footer"></Footer>
         </React.Fragment>
     )
 };
