@@ -13,7 +13,7 @@
 }
 
 [data-aos="percentage-animation"] {
-    transform: rotate(0deg);
+    transform: rotate(200deg);
     opacity: 0;
     transition-property: transform, opacity;
 }

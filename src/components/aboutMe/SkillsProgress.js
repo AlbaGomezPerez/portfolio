@@ -14,7 +14,9 @@ const Results = () => {
             type="circle"
             data-aos="percentage-animation"
             percent={99} strokeColor="#8dc5be"
-            strokeWidth={10} format={() => 'HTML/CSS'} />
+            strokeWidth={10} format={() => 'HTML/CSS'}>
+        </Progress>
+
         <Progress
             className="percentage__circle"
             type="circle"
