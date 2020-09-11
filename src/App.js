@@ -17,7 +17,7 @@ function App() {
     const [allReadmes, setAllReadmes] = useState([]);
 
     AOS.init({
-        duration: 3000,
+        duration: 1500,
         mirror: true,
     });
 
