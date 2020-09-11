@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, {useEffect} from 'react';
 import PropTypes from 'prop-types';
 import { HashLink as Link } from 'react-router-hash-link';
 import 'aos/dist/aos.css';
@@ -15,6 +15,17 @@ import { getReadme } from '../../services/readmeProjects';
  * @param props that contains projects, images projects and readmes projects and match.
  */
 const ProjectDetail = (props) => {
+
+    useEffect(() => {
+        scrollUp()
+    });
+
+    const scrollUp = () => {
+        console.log('el scroll');
+        window.scrollTo(0, 0);
+    };
+
+
     // eslint-disable-next-line react/prop-types
     const { allProjects, Match, allImages, allReadmes } = props;
     // eslint-disable-next-line react/prop-types,radix
@@ -22,9 +33,10 @@ const ProjectDetail = (props) => {
     const { Title } = Typography;
     const project = allProjects.find(myProject => myProject.id === projectId);
 
+
     if (project) {
         return (
-            <div className="projectDetail">
+            <div className="projectDetail" id="projectDetail">
                 <Col className="details" sm={{span: 24}} md={{span: 6, offset: 4}} lg={{span: 24}}>
                     <Row className="details-image">
                         <div className="image-project-container">
@@ -80,6 +92,9 @@ const ProjectDetail = (props) => {
                                                 <p className="goal-title">Visita la web</p>
                                             </a>
                                         </div>
+                                    </div>
+                                    <div className="up">
+                                        <i onClick={scrollUp} className="material-icons upIcon">arrow_drop_up</i>
                                     </div>
                                 </Col>
                             </div>

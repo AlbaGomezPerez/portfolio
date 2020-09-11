@@ -154,6 +154,18 @@
     display: none;
 }
 
+.up {
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.upIcon {
+    font-size: 80px;
+    width: 100%;
+}
+
 [data-aos="image-container"] {
     bottom: -50%;
     opacity: 0;
@@ -163,6 +175,12 @@
 [data-aos="image-container"].aos-animate {
     bottom: 1%;
     opacity: 1;
+}
+
+@media all and (min-width: 769px) {
+    .upIcon {
+        display: none;
+    }
 }
 
 @media all and (max-width: 1025px) {

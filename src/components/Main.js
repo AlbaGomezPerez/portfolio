@@ -15,6 +15,7 @@ function Main(props) {
     const { allProjects, allImages, allReadmes } = props;
 
     return (
+
         <Switch>
             <Route
                 exact
