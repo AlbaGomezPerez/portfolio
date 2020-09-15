@@ -15,6 +15,10 @@ function Projects(props) {
     const { Title } = Typography;
     const { allProjects, allImages, allReadmes } = props;
 
+    console.log({allProjects});
+    console.log({allImages});
+    console.log({allReadmes});
+
     return (
         <React.Fragment>
             <Progress
@@ -58,7 +62,7 @@ function Projects(props) {
                                         }
                                         actions={[]}
                                     >
-                                        <div className="">
+                                        <div>
                                             <Meta
                                                 className="caption"
                                                 avatar={<Avatar src={alba}/>}
