@@ -77,7 +77,7 @@ const ProjectDetail = (props) => {
                                         <div className="logo-container tools icons__circle"></div>
                                         <div className="profile">
                                             <a href={project.homepage} target="_blank" rel="noopener noreferrer">
-                                                <p className="goal-title">Visita la web</p>
+                                                <p className="goal-title webPage">Visita la web</p>
                                             </a>
                                         </div>
                                     </div>
