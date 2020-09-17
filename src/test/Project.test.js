@@ -141,6 +141,9 @@ test("Project component render porjects cards", () => {
     const projectCard = container.querySelector(".caption");
     expect(projectCard).not.toBe(null);
 
+    console.log(container.querySelector(".caption").textContent)
+
+
     //Topics
     const projectTopics = container.querySelectorAll(".allTopics");
     expect(projectTopics[0].firstElementChild.classList[1]).toBe("project-css");
