@@ -1,8 +1,8 @@
 import React from "react";
 import {mount} from 'enzyme';
 import Header from "../components/Header";
-import {Link} from "react-router-dom";
 import {MemoryRouter} from "react-router";
+import {Link} from "react-router-dom";
 
 test("Header component is rendered", () => {
     const container = mount(<MemoryRouter><Header /></MemoryRouter>);
@@ -14,5 +14,4 @@ test("Header component is rendered", () => {
     expect(container.find(Link).at(1).prop('to')).toBe("/#projects")
     expect(container.find(Link).at(2).text()).toBe("Contacto")
     expect(container.find(Link).at(2).prop('to')).toBe("/#contact")
-
 });

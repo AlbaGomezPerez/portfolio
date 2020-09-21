@@ -1,9 +1,5 @@
 import React from "react";
-import { render } from "@testing-library/react";
-import App from "./../App";
-import { BrowserRouter } from "react-router-dom";
 import {shallow} from 'enzyme';
-import Main from "../components/Main";
 import Footer from "../components/Footer";
 import {Layout} from "antd";
 
