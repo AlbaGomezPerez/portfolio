@@ -6,18 +6,6 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 
-// test("Render footer, header and main components", () => {
-//     const { container } = render(
-//         <BrowserRouter>
-//             <App />
-//         </BrowserRouter>
-//     );
-//
-//     //Main
-//     const main = container.querySelector(".main");
-//     expect(main).not.toBe(null);
-// });
-
 test("Render footer, header and main components", () => {
     const container = shallow(<App />);
     expect(container.find(Main)).toHaveLength(1)

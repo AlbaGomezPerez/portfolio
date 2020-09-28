@@ -1,7 +1,10 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import ProjectDetail from "../components/projects/ProjectDetail";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Link } from "react-router-dom";
+import {mount} from "enzyme";
+import {Typography} from "antd";
+import {MemoryRouter} from "react-router";
 
 const projects = [
     {
@@ -144,9 +147,6 @@ test("Project detail component render details of project", () => {
         .toBe("https://raw.githubusercontent.com/AlbaGomezPerez/alba-gomez-starwars/master/src/images/project.png");
 
     //Project text
-    const StarWarsTitle = container.querySelector(".page__title");
-    expect(StarWarsTitle.textContent).toBe("alba-gomez-starwars");
-
     const projectDescription = container.querySelector(".profile-text");
     expect(projectDescription.textContent)
         .toBe("Un proyecto inspirado en el universo Star Wars. Se trata de una página que muestra un listado de naves espaciales y unas barras de progreso que reflejan los porcentajes de cada uno de sus atributos.");
@@ -168,6 +168,18 @@ test("Project detail component render details of project", () => {
     //Link go back
     const goBack = container.querySelector(".backContainer");
     expect(goBack.parentElement.href).toBe("http://localhost/#project248974490");
+});
 
+test("Project detail link and title is rendered", () => {
+    const container = mount(<MemoryRouter>
+        <ProjectDetail
+            allProjects={projects}
+            allImages={images}
+            allReadmes={readmes}
+            Match={match} />
+    </MemoryRouter>);
+
+    expect(container.find(Link).prop('to')).toBe("/#project248974490")
+    expect(container.find(Typography.Title).text()).toBe("alba-gomez-starwars")
 });
 

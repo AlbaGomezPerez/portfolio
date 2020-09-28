@@ -10,8 +10,6 @@ const { Footer } = Layout;
  * Component which render Contact content
  */
 function Contact() {
-    const { Title } = Typography;
-
     return (
         <React.Fragment>
             <Progress
@@ -30,7 +28,7 @@ function Contact() {
                 xs={{span: 24}} sm={{span: 24}} md={{span: 6, offset: 4}} lg={{span: 20}} xl={{span: 20}}>
                 <Row className="contact-row">
                     <div className="contact__container">
-                        <Title className="page__title contact-title" level={2}>Contacto</Title>
+                        <Typography.Title className="page__title contact-title" level={2}>Contacto</Typography.Title>
                         <p className="contact-description">
                             Si crees que puedo ser la persona adecuada para tu próximo proyecto no dudes en ponerte en
                             contacto conmigo.

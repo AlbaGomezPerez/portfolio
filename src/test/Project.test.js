@@ -1,7 +1,10 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import Project from "../components/projects/Projects";
-import { BrowserRouter } from "react-router-dom";
+import {BrowserRouter, Link} from "react-router-dom";
+import {mount} from "enzyme";
+import {Progress, Card} from "antd";
+import {MemoryRouter} from "react-router";
 
 const projects = [
     {
@@ -141,9 +144,6 @@ test("Project component render porjects cards", () => {
     const projectCard = container.querySelector(".caption");
     expect(projectCard).not.toBe(null);
 
-    console.log(container.querySelector(".caption").textContent)
-
-
     //Topics
     const projectTopics = container.querySelectorAll(".allTopics");
     expect(projectTopics[0].firstElementChild.classList[1]).toBe("project-css");
@@ -153,5 +153,32 @@ test("Project component render porjects cards", () => {
     expect(projectTopics[4].children[4].classList[1]).toBe("project-portfolio");
     expect(projectTopics[5].children[5].classList[1]).toBe("project-angular");
     expect(projectTopics[6].firstElementChild.classList[1]).toBe("project-css");
+});
+
+test("Project links and names are rendered", () => {
+    const container = mount(<MemoryRouter>
+        <Project
+            allProjects={projects}
+            allImages={images}
+            allReadmes={readmes}/>
+    </MemoryRouter>);
+
+    expect(container.find(Link).at(0).prop('to')).toBe("/project/273230317")
+    expect(container.find(Link).at(1).prop('to')).toBe("/project/270694115")
+    expect(container.find(Link).at(2).prop('to')).toBe("/project/266110188")
+    expect(container.find(Link).at(3).prop('to')).toBe("/project/228392785")
+    expect(container.find(Link).at(4).prop('to')).toBe("/project/243966944")
+    expect(container.find(Link).at(5).prop('to')).toBe("/project/248974490")
+
+    expect(container.find(Progress).prop('percent')).toBe(100)
+
+    expect(container.find(Card.Meta).at(0).text()).toBe(" Ines ingenieros")
+    expect(container.find(Card.Meta).at(1).text()).toBe(" Angular rocks")
+    expect(container.find(Card.Meta).at(2).text()).toBe("alba-gomez-evidence-based-behavior")
+    expect(container.find(Card.Meta).at(3).text()).toBe("rentger-alba-gomez-perez")
+    expect(container.find(Card.Meta).at(4).text()).toBe("g-m4-bridgeforbillions")
+    expect(container.find(Card.Meta).at(5).text()).toBe("alba-gomez-starwars")
+
+    // expect(container.find(Card).at(5).prop('cover')).toBe("/project/248974490")
 });
 
